@@ -3,7 +3,7 @@
     --color-white: #fff;
 
     --max-width: 1200px;
-    --container-padding: 0 20px;
+    --container-padding: 0 15px;
     --font-mulish: 'Mulish', sans-serif;
     --font-quattrocento: 'Quattrocento Sans', sans-serif;
     --foreground-rgb: 0, 0, 0;
@@ -111,6 +111,7 @@ header {
 }
 
 i[class^='icon-'] {
+    display: inline-block;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -133,6 +134,55 @@ i[class^='icon-'] {
 
 .icon-cellphone {
     background-image: url(../public/icons/cellphone.svg);
+}
+
+.icon-next {
+    background-image: url(../public/icons/menu-next.svg);
+    background-size: cover;
+    margin-left: auto;
+    height: 45px;
+    width: 62px;
+}
+
+.icon-about {
+    background-image: url(../public/icons/profile.svg);
+    height: 50px;
+    width: 45px
+}
+
+.icon-tech {
+    background-image: url(../public/icons/tech.svg);
+    background-size: cover;
+    height: 50px;
+    width: 43px;
+}
+
+.icon-features {
+    background-image: url(../public/icons/features.svg);
+    background-size: cover;
+    height: 53px;
+    width: 50px;
+}
+
+.icon-timeline {
+    background-image: url(../public/icons/timeline.svg);
+    background-size: cover;
+    height: 50px;
+    width: 13px;
+}
+
+.icon-investors {
+    background-image: url(../public/icons/investors.svg);
+    background-size: cover;
+    height: 50px;
+    width: 53px;
+}
+
+.icon-blog {
+    background-image: url(../public/icons/blog.svg);
+    background-size: cover;
+    height: 50px;
+    width: 48px;
 }
 
 #__next {
