@@ -1,39 +1,57 @@
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  /* padding: 6rem; */
-  /* min-height: 100vh; */
+.MainMenu {
+    padding: 18px 0;
 }
 
-.MainBox {
-    background-blend-mode: overlay;
-    -webkit-box-shadow: 0px 0px 0px 1px rgba(255,255,255,0.2);
-    -moz-box-shadow: 0px 0px 0px 1px rgba(255,255,255,0.2);
-    box-shadow: 0px 0px 0px 1px rgba(255,255,255,0.2);
-    backdrop-filter: blur(50px);
-    border-radius: var(--border-radius-lg);
-    margin: auto;
-    text-align: center;
-    height: 525px;
-    width: 770px;
+.MenuLink {
     display: flex;
+    padding: 22px 40px;
+}
+
+.MenuLink img {
+    object-fit: cover;
+    height: 120px;
+    width: 210px;
+}
+
+.MenuLink .icon-next {
+    margin-left: auto;
+}
+
+.MenuLink:not(:last-child) {
+    border-bottom: 0.5px solid rgba(0,0,0, .5);
+}
+
+.MenuLinkIcon {
     align-items: center;
-    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 8px 24px 64px 8px rgba(179, 167, 138, 0.2);
+    border-radius: 28px;
+    display: flex;
     justify-content: center;
-    margin: 50px auto;
+    transform: rotate(0.12deg);
+    height: 100px;
+    width: 100px;
 }
 
-.MainBox h1 {
-    color: var(--color-white);
-    max-width: 570px;
-    margin-bottom: 32px;
+.MenuLinkText {
+    padding: 0 100px 0 25px;
+    width: 600px;
 }
 
-.MainBox a {
-    color: var(--color-white);
-    font-size: var(--font-size-20);
-    line-height: var(--line-height-23);
-    text-decoration: underline;
+.MenuLinkText h1 {
+    margin-bottom: 15px;
+}
+
+.MenuLinkText div {
+    display: flex;
+    gap: 45px;
+}
+
+.MenuLinkText div strong,
+.MenuLinkText div span {
+    width: 50%;
+}
+
+.icon-next {
+    margin-left: auto;
 }
