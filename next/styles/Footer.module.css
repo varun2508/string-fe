@@ -1,0 +1,52 @@
+.Footer {
+    margin-bottom: 20px;
+    width: var(--width-100);
+    margin-top: auto;
+}
+
+.Dock {
+
+    backdrop-filter: blur(50px);
+    border-radius: var(--border-radius-md);
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(255,255,255,0.2);
+    -moz-box-shadow: 0px 0px 0px 1px rgba(255,255,255,0.2);
+    box-shadow: 0px 0px 0px 1px rgba(255,255,255,0.2);
+}
+
+.DockLogo {
+    height: 55px;
+}
+
+.DockMenu {
+    display: var(--flex);
+    gap: 40px;
+}
+
+.DockItem {
+    align-items: center;
+    flex-direction: column;
+    display: var(--flex);
+    color: var(--color-white);
+    width: 44px;
+}
+
+.DockItem i {
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: var(--border-radius-full);
+    display: var(--flex);
+    justify-content: center;
+    margin-bottom: 5px;
+    height: 44px;
+    width: 44px;
+}
+
+.DockItem span {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 13px;
+}
