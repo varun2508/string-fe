@@ -1,0 +1,21 @@
+.Note {
+    border-radius: var(--border-radius-sm);
+    backdrop-filter: blur(50px);
+    color: var(--color-white);
+    padding: 15px 18px;
+    min-width: 200px;
+    width: fit-content;
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(255,255,255,0.2);
+    -moz-box-shadow: 0px 0px 0px 1px rgba(255,255,255,0.2);
+    box-shadow: 0px 0px 0px 1px rgba(255,255,255,0.2);
+}
+
+.Note h5,
+.Note p {
+    margin-bottom: 4px;
+}
+
+.Note p {
+    font-size: var(--font-size-18);
+    line-height: var(--line-height-23);
+}
