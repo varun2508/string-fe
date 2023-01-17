@@ -1,0 +1,98 @@
+.AboutContent {
+    display: flex;
+    gap: 60px;
+}
+
+.TeamItems {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 18px;
+    column-gap: 57px;
+}
+
+.TeamMember {
+    position: relative;
+    margin-bottom: 40px;
+    perspective: 1000px;
+    transform: translate3d(0,0,0);
+    max-width: 285px;
+    width: 100%;
+}
+
+.TeamMember hr {
+    margin: 20px 0;
+}
+
+.TeamMember h5 {
+    margin-bottom: 2px;
+}
+
+.Card {
+    cursor: pointer;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: -webkit-transform .5s cubic-bezier(.63,-.32,.4,1.39);
+    transition: transform .5s cubic-bezier(.63,-.32,.4,1.39);
+    transition: transform .5s cubic-bezier(.63,-.32,.4,1.39),-webkit-transform .5s cubic-bezier(.63,-.32,.4,1.39);
+    backface-visibility: hidden;
+}
+
+.CardFront {
+    transition: .5s;
+    perspective: preserve-3d;
+    backface-visibility: hidden;
+    transform: rotateY(0);
+}
+
+.CardBack {
+    backface-visibility: hidden;
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    perspective: preserve-3d;
+    transform: rotateY(-180deg);
+    transform-style: preserve-3d;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform,-webkit-transform;
+}
+
+.CardBack a {
+    text-decoration: underline;
+}
+
+.CardFront,
+.CardBack {
+    border-radius: var(--border-radius-sm);
+    overflow: hidden;
+    width: 285px;
+    height: 280px;
+}
+
+.CardFront img {
+    border-radius: var(--border-radius-sm);
+    display: block;
+    object-fit: cover;
+    height: 100vh;
+    max-height: 100%;
+    max-width: 100%;
+    width: 100vw;
+}
+
+.CardBack {
+    background-color: #F0FBEC;
+    padding: 16px;
+}
+
+
+.TeamMember:hover .CardFront {
+    transform: rotateY(180deg);
+}
+
+.TeamMember:hover .CardBack {
+    transform: rotateY(0);
+}
+
+
