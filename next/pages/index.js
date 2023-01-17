@@ -10,21 +10,17 @@ export default function Index() {
             <Head>
                 <title>String</title>
             </Head>
-            <main className={styles.main}>
-                <div className="container">
-                    <div className={styles.MainBox}>
-                        <Image src={LogoIntro}
-                            className={styles.LogoIntro}
-                            alt="String"
-                            loading="lazy"
-                            width="270"
-                            height="118"
-                        />
-                        <h1>Welcome to a better, safer internet.</h1>
-                        <Link href="/home" alt="Home">Click to enter</Link>
-                    </div>
-                </div>
-            </main>
+            <div className={styles.MainBox}>
+                <Image src={LogoIntro}
+                    className={styles.LogoIntro}
+                    alt="String"
+                    loading="lazy"
+                    width="270"
+                    height="118"
+                />
+                <h1>Welcome to a better, safer internet.</h1>
+                <Link href="/home" alt="Home">Click to enter</Link>
+            </div>
         </>
     )
 }

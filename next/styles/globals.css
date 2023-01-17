@@ -10,6 +10,8 @@
     --background-start-rgb: 214, 219, 220;
     --background-end-rgb: 255, 255, 255;
 
+    --background-contain: contain;
+
     --border-radius-sm: 16px;
     --border-radius-md: 24px;
     --border-radius-lg: 40px;
@@ -81,6 +83,10 @@ a {
     text-decoration: none;
 }
 
+p {
+    margin-bottom: 18px;
+}
+
 h1 {
     font-size: var(--font-size-60);
     font-weight: var(--font-weight-400);
@@ -88,11 +94,16 @@ h1 {
 }
 
 h2 {
-    
+    font-size: var(--font-size-50);
+    font-weight: var(--font-weight-400);
+    line-height: var(--line-height-60);
 }
 
 h3 {
-    
+    font-size: var(--font-size-46);
+    font-weight: var(--font-weight-400);
+    line-height: var(--line-height-50);
+    margin-bottom: 24px;
 }
 
 h4 {
@@ -136,9 +147,15 @@ i[class^='icon-'] {
     background-image: url(../public/icons/cellphone.svg);
 }
 
+.icon-back {
+    background-image: url(../public/icons/back.svg);
+    height: 7px;
+    width: 35px;
+}
+
 .icon-next {
     background-image: url(../public/icons/menu-next.svg);
-    background-size: cover;
+    background-size: var(--background-contain);
     margin-left: auto;
     height: 45px;
     width: 62px;
@@ -146,41 +163,42 @@ i[class^='icon-'] {
 
 .icon-about {
     background-image: url(../public/icons/profile.svg);
+    background-size: var(--background-contain);
     height: 50px;
     width: 45px
 }
 
 .icon-tech {
     background-image: url(../public/icons/tech.svg);
-    background-size: cover;
+    background-size: var(--background-contain);
     height: 50px;
     width: 43px;
 }
 
 .icon-features {
     background-image: url(../public/icons/features.svg);
-    background-size: cover;
+    background-size: var(--background-contain);
     height: 53px;
     width: 50px;
 }
 
 .icon-timeline {
     background-image: url(../public/icons/timeline.svg);
-    background-size: cover;
+    background-size: var(--background-contain);
     height: 50px;
     width: 13px;
 }
 
 .icon-investors {
     background-image: url(../public/icons/investors.svg);
-    background-size: cover;
+    background-size: var(--background-contain);
     height: 50px;
     width: 53px;
 }
 
 .icon-blog {
     background-image: url(../public/icons/blog.svg);
-    background-size: cover;
+    background-size: var(--background-contain);
     height: 50px;
     width: 48px;
 }
@@ -195,6 +213,15 @@ i[class^='icon-'] {
     min-height: 100vh;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 6rem; */
+  /* min-height: 100vh; */
+}
+
 .container {
     max-width: var(--max-width);
     margin: var(--margin-auto);
@@ -202,8 +229,41 @@ i[class^='icon-'] {
     width: var(--width-100);
 }
 
+.button-back {
+    padding: 15px 0;
+    position: absolute;
+    left: -60px;
+}
+
 .page-content {
     background-color: var(--bg-light-beige);
     border-radius: var(--border-radius-lg);
     margin-bottom: 40px;
+}
+
+.page-inner {
+    padding: 60px 100px;
+}
+
+.page-heading {
+    align-items: center;
+    display: flex;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.page-icon {
+    align-items: center;
+    background-color: var(--color-white);
+    box-shadow: 8px 24px 64px 8px rgba(179, 167, 138, 0.2);
+    border-radius: var(--border-radius-sm);
+    display: flex;
+    justify-content: center;
+    margin-right: 25px;
+    height: 60px;
+    width: 60px;
+}
+
+.page-icon i {
+    height: 30px;
 }
