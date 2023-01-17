@@ -20,7 +20,7 @@ const menuItems = [
         description: 'Secure to the core',
         icon: 'icon-tech',
         image: TechImage,
-        path: '#',
+        path: '/tech',
     },
     {
         title: 'Features',

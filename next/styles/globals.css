@@ -29,7 +29,7 @@
 
     --font-size-60: 60px;
     --font-size-50: 50px;
-    --font-size-46: 46px;
+    --font-size-44: 44px;
     --font-size-32: 32px;
     --font-size-28: 28px;
     --font-size-20: 20px;
@@ -100,7 +100,7 @@ h2 {
 }
 
 h3 {
-    font-size: var(--font-size-46);
+    font-size: var(--font-size-44);
     font-weight: var(--font-weight-400);
     line-height: var(--line-height-50);
     margin-bottom: 24px;
@@ -201,6 +201,41 @@ i[class^='icon-'] {
     background-size: var(--background-contain);
     height: 50px;
     width: 48px;
+}
+
+.icon-lock {
+    background-image: url(../public/icons/lock.svg);
+    background-size: var(--background-contain);
+    height: 50px;
+    width: 42px;
+}
+
+.icon-network {
+    background-image: url(../public/icons/network.svg);
+    background-size: var(--background-contain);
+    height: 50px;
+    width: 40px;
+}
+
+.icon-map {
+    background-image: url(../public/icons/map.svg);
+    background-size: var(--background-contain);
+    height: 40px;
+    width: 50px;
+}
+
+.icon-search {
+    background-image: url(../public/icons/search.svg);
+    background-size: var(--background-contain);
+    height: 50px;
+    width: 50px;
+}
+
+.icon-chat {
+    background-image: url(../public/icons/chat.svg);
+    background-size: var(--background-contain);
+    height: 50px;
+    width: 52px;
 }
 
 #__next {
