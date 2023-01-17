@@ -1,19 +1,19 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import techItems from '../data/tech-items'
+import featuresItems from '../data/features-items'
 import styles from '../styles/Menu.module.css'
 
 function Tech() {
     return (
         <>
             <Head>
-                <title>String | Tech</title>
+                <title>String | Features</title>
             </Head>
 
-            { techItems.length > 0 ?
+            { featuresItems.length > 0 ?
                 <div className={styles.MainMenu}>
-                    { techItems.map(item => 
+                    { featuresItems.map(item => 
                         <Link href={item.path} className={styles.MenuLink}>
                             <div className={styles.MenuLinkIcon}>
                                 <i className={item.icon} />

@@ -238,6 +238,48 @@ i[class^='icon-'] {
     width: 52px;
 }
 
+.icon-documents {
+    background-image: url(../public/icons/documents.svg);
+    background-size: var(--background-contain);
+    height: 50px;
+    width: 46px;
+}
+
+.icon-images {
+    background-image: url(../public/icons/images.svg);
+    background-size: var(--background-contain);
+    height: 46px;
+    width: 52px;
+}
+
+.icon-calendar {
+    background-image: url(../public/icons/calendar.svg);
+    background-size: var(--background-contain);
+    height: 50px;
+    width: 46px;
+}
+
+.icon-pocket {
+    background-image: url(../public/icons/pocket.svg);
+    background-size: var(--background-contain);
+    height: 50px;
+    width: 53px;
+}
+
+.icon-cloud {
+    background-image: url(../public/icons/cloud.svg);
+    background-size: var(--background-contain);
+    height: 42px;
+    width: 55px;
+}
+
+.icon-chart {
+    background-image: url(../public/icons/chart.svg);
+    background-size: var(--background-contain);
+    height: 46px;
+    width: 53px;
+}
+
 #__next {
     background: url(../public/aaron-burden.png);
     background-repeat: no-repeat;

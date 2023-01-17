@@ -28,7 +28,7 @@ const menuItems = [
         description: 'Programmable everything',
         icon: 'icon-features',
         image: FeatureImage,
-        path: '#',
+        path: '/features',
     },
     {
         title: 'Timeline',
