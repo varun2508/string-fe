@@ -22,8 +22,8 @@ function About() {
                     </div>
                     <h1>About</h1>
                 </div>
-                <div className={styles.AboutContent}>
-                    <div className={styles.AboutText}>
+                <div className="page-intro">
+                    <div>
                         <p>String is a unique and pioneering public blockchain
                             that stands out from its peers with its advanced core
                             features. String prioritizes user and developer privacy
@@ -31,7 +31,7 @@ function About() {
                             public, while also ensuring that their private data remains
                             fully encrypted and secure.
                         </p>
-                        <p>Furthermore, String's advanced database capabilities
+                        <p>Furthermore, String&apos;s advanced database capabilities
                             expand the types of data that can be stored on-chain,
                             allowing users to move away from centralized off-chain
                             storage solutions. With String, you can be confident in
@@ -39,7 +39,7 @@ function About() {
                             the many benefits of a decentralized blockchain.
                         </p>
                     </div>
-                    <div className={styles.AboutImage}>
+                    <div  className="page-banner">
                         <Image src={AboutImage} alt="About" loading="lazy" />
                     </div>
                 </div>
@@ -51,8 +51,8 @@ function About() {
 
                     { teamMembers.length > 0 ?
                         <div className={styles.TeamItems}>
-                            { teamMembers.map(member =>
-                                <div className={styles.TeamMember}>
+                            { teamMembers.map((member, key) =>
+                                <div className={styles.TeamMember} key={key}>
                                     <div className={styles.Card}>
                                         <div className={styles.CardFront}>
                                             <Image src={member.avatar}
