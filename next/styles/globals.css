@@ -322,6 +322,15 @@ i[class^='icon-'] {
     padding: 60px 100px;
 }
 
+.page-intro {
+    display: flex;
+    gap: 60px;
+}
+
+.page-intro > div {
+    width: 50%;
+}
+
 .page-heading {
     align-items: center;
     display: flex;

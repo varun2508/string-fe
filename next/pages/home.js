@@ -13,8 +13,8 @@ function Home() {
 
             { menuItems.length > 0 ?
                 <div className={styles.MainMenu}>
-                    { menuItems.map(item => 
-                        <Link href={item.path} className={styles.MenuLink}>
+                    { menuItems.map((item, key) => 
+                        <Link href={item.path} className={styles.MenuLink} key={key}>
                             <div className={styles.MenuLinkIcon}>
                                 <i className={item.icon} />
                             </div>

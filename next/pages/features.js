@@ -13,8 +13,8 @@ function Tech() {
 
             { featuresItems.length > 0 ?
                 <div className={styles.MainMenu}>
-                    { featuresItems.map(item => 
-                        <Link href={item.path} className={styles.MenuLink}>
+                    { featuresItems.map((item, key) => 
+                        <Link href={item.path} className={styles.MenuLink} key={key}>
                             <div className={styles.MenuLinkIcon}>
                                 <i className={item.icon} />
                             </div>
