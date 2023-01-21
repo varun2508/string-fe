@@ -36,7 +36,7 @@ const menuItems = [
         description: 'Beta-app launch Feb 2023',
         icon: 'icon-timeline',
         image: TimelineImage,
-        path: '#',
+        path: '/timeline',
     },
     {
         title: 'Investors',

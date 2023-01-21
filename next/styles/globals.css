@@ -1,6 +1,7 @@
 :root {
     --color-black: #000;
     --color-white: #fff;
+    --color-blue: #6D8FFF;
 
     --max-width: 1200px;
     --container-padding: 0 15px;
@@ -41,6 +42,7 @@
     --font-weight-300: 300;
 
     --line-height-66: 66px;
+    --line-height-55: 55px;
     --line-height-50: 50px;
     --line-height-31: 31px;
     --line-height-23: 23px;
@@ -96,7 +98,7 @@ h1 {
 h2 {
     font-size: var(--font-size-50);
     font-weight: var(--font-weight-400);
-    line-height: var(--line-height-60);
+    line-height: var(--line-height-55);
 }
 
 h3 {
