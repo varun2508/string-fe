@@ -6,7 +6,7 @@ import styles from '../styles/Intro.module.css'
 
 export default function Index() {
     return (
-        <>
+        <div className="page">
             <Head>
                 <title>String</title>
             </Head>
@@ -21,7 +21,7 @@ export default function Index() {
                 <h1>Welcome to a better, safer internet.</h1>
                 <Link href="/home" alt="Home">Click to enter</Link>
             </div>
-        </>
+        </div>
     )
 }
 

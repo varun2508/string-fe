@@ -13,11 +13,11 @@ function TechInner() {
     const page = techItems.find(item => item.id === id)
 
     return (
-        <>
+        <div className="page">
             <Head>
                 <title>String | {page.title}</title>
             </Head>
-            
+
             <div className="page-inner">
                 <div className="page-heading">
                     <Link href="/tech" className="button-back">
@@ -37,7 +37,7 @@ function TechInner() {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

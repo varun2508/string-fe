@@ -13,11 +13,11 @@ function FeaturesInner() {
     const page = featuresItems.find(item => item.id === id)
 
     return (
-        <>
+        <div className="page">
             <Head>
                 <title>String | {page.title}</title>
             </Head>
-            
+
             <div className="page-inner">
                 <div className="page-heading">
                     <Link href="/features" className="button-back">
@@ -37,7 +37,7 @@ function FeaturesInner() {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

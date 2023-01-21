@@ -6,7 +6,7 @@ import styles from '../styles/Menu.module.css'
 
 function Home() {
     return (
-        <>
+        <div className="page">
             <Head>
                 <title>String | Home</title>
             </Head>
@@ -32,7 +32,7 @@ function Home() {
                 </div>
                 : ''
             }
-        </>
+        </div>
     )
 }
 

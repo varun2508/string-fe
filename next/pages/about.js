@@ -7,7 +7,7 @@ import styles from '../styles/About.module.css'
 
 function About() {
     return (
-        <>
+        <div className="page">
             <Head>
                 <title>String | About</title>
             </Head>
@@ -75,7 +75,7 @@ function About() {
                     }
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 
