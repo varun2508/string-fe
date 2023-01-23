@@ -1,0 +1,52 @@
+.TimelineFeed {
+    display: flex;
+    gap: 100px;
+}
+
+.TimelineFeed h2 {
+    font-weight: var(--font-weight-700);
+}
+
+.TimelineFeedItem {
+    display: flex;
+    padding: 20px 0;
+    position: relative;
+}
+
+.TimelineFeedItem:last-child {
+    padding-bottom: 0;
+}
+
+.TimelineFeedItem::before {
+    border-radius: 2px;
+    background: linear-gradient(90deg, #92D5BD 0%, #6D8FFF 100%);
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 2px;
+    width: 100%;
+}
+
+.TimelineFeedItem h5 {
+    margin-bottom: 16px;
+}
+
+.TimelineFeedItem div:first-child {
+    width: 100%;
+    max-width: 70%;
+}
+
+.TimelineFeedItem > div + div {
+    padding-left: 40px;
+    max-width: 30%;
+    width: 100%;
+}
+
+.TimelineItemDate {
+    color: var(--color-blue);
+}
+
+.TimelineItemDate i {
+    margin-right: 8px;
+}
