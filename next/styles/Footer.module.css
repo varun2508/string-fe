@@ -40,9 +40,45 @@
     border-radius: var(--border-radius-full);
     display: var(--flex);
     justify-content: center;
+    position: relative;
     margin-bottom: 5px;
+    background-size: 24px 25px;
     height: 44px;
     width: 44px;
+    transition: background-color .3s ease-in-out;
+}
+
+.DockItem i:after {
+    opacity: 0;
+}
+
+.DockItem i:before,
+.DockItem i:after {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .2s ease-in-out;
+}
+
+.DockItem:hover i,
+.DockItem[data-link="true"] i {
+    background-color: var(--color-white);
+}
+
+.DockItem:hover i:before,
+.DockItem[data-link="true"] i:after {
+    opacity: 0;
+}
+
+.DockItem:hover i:after,
+.DockItem[data-link="true"] i:after {
+    opacity: 1;
 }
 
 .DockItem span {

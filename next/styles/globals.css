@@ -1,3 +1,4 @@
+/* Reset */
 :root {
     --color-black: #000;
     --color-white: #fff;
@@ -163,54 +164,12 @@ textarea {
     resize: vertical;
 }
 
+/* Global Icons */
 i[class^='icon-'] {
     display: inline-block;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-.icon-right {
-    background-image: url(../public/icons/arrow-right.svg);
-    height: 12px;
-    width: 12px;
-}
-
-.icon-phone {
-    background-image: url(../public/icons/phone.svg);
-}
-
-.icon-phone-colored {
-    background-image: url(../public/icons/phone-colored.svg);
-    height: 21px;
-    width: 21px;
-}
-
-.icon-drive {
-    background-image: url(../public/icons/folder-arrow.svg);
-}
-
-.icon-users {
-    background-image: url(../public/icons/users.svg);
-}
-
-.icon-newsletter {
-    background-image: url(../public/icons/email-newsletter.svg);
-}
-
-.icon-newsletter-colored {
-    background-image: url(../public/icons/email-newsletter-colored.svg);
-    height: 25px;
-    width: 25px;
-}
-
-.icon-cellphone {
-    background-image: url(../public/icons/cellphone.svg);
-}
-
-.icon-cellphone-colored {
-    background-image: url(../public/icons/cellphone-colored.svg);
-    height: 28px;
-    width: 18px;
+    background-size: var(--background-contain);
 }
 
 .icon-back {
@@ -221,7 +180,6 @@ i[class^='icon-'] {
 
 .icon-next {
     background-image: url(../public/icons/menu-next.svg);
-    background-size: var(--background-contain);
     margin-left: auto;
     height: 45px;
     width: 62px;
@@ -229,21 +187,18 @@ i[class^='icon-'] {
 
 .icon-about {
     background-image: url(../public/icons/profile.svg);
-    background-size: var(--background-contain);
     height: 50px;
     width: 45px
 }
 
 .icon-tech {
     background-image: url(../public/icons/tech.svg);
-    background-size: var(--background-contain);
     height: 50px;
     width: 43px;
 }
 
 .icon-features {
     background-image: url(../public/icons/features.svg);
-    background-size: var(--background-contain);
     height: 53px;
     width: 50px;
 }
@@ -257,109 +212,196 @@ i[class^='icon-'] {
 
 .icon-investors {
     background-image: url(../public/icons/investors.svg);
-    background-size: var(--background-contain);
     height: 50px;
     width: 53px;
 }
 
 .icon-blog {
     background-image: url(../public/icons/blog.svg);
-    background-size: var(--background-contain);
     height: 50px;
     width: 48px;
 }
 
 .icon-lock {
     background-image: url(../public/icons/lock.svg);
-    background-size: var(--background-contain);
     height: 50px;
     width: 42px;
 }
 
 .icon-network {
     background-image: url(../public/icons/network.svg);
-    background-size: var(--background-contain);
     height: 50px;
     width: 40px;
 }
 
 .icon-map {
     background-image: url(../public/icons/map.svg);
-    background-size: var(--background-contain);
     height: 40px;
     width: 50px;
 }
 
-.icon-map-colored {
-    background-image: url(../public/icons/map-colored.svg);
-    background-size: var(--background-contain);
-    height: 23px;
-    width: 27px;
-}
-
 .icon-search {
     background-image: url(../public/icons/search.svg);
-    background-size: var(--background-contain);
     height: 50px;
     width: 50px;
 }
 
 .icon-chat {
     background-image: url(../public/icons/chat.svg);
-    background-size: var(--background-contain);
     height: 50px;
     width: 52px;
 }
 
 .icon-documents {
     background-image: url(../public/icons/documents.svg);
-    background-size: var(--background-contain);
     height: 50px;
     width: 46px;
 }
 
 .icon-images {
     background-image: url(../public/icons/images.svg);
-    background-size: var(--background-contain);
     height: 46px;
     width: 52px;
 }
 
 .icon-calendar {
     background-image: url(../public/icons/calendar.svg);
-    background-size: var(--background-contain);
     height: 50px;
     width: 46px;
 }
 
 .icon-pocket {
     background-image: url(../public/icons/pocket.svg);
-    background-size: var(--background-contain);
     height: 50px;
     width: 53px;
 }
 
 .icon-cloud {
     background-image: url(../public/icons/cloud.svg);
-    background-size: var(--background-contain);
     height: 42px;
     width: 55px;
 }
 
 .icon-chart {
     background-image: url(../public/icons/chart.svg);
-    background-size: var(--background-contain);
     height: 46px;
     width: 53px;
 }
 
 .icon-thin-right {
     background-image: url(../public/icons/arrow-thin-right.svg);
-    background-size: var(--background-contain);
     height: 9px;
     width: 16px;
 }
 
+/* Footer Menu Icons */
+.icon-phone:after,
+.icon-phone:before {
+    height: 16px;
+    width: 16px;
+}
+
+.icon-phone:before {
+    background-image: url(../public/icons/phone.svg);
+}
+
+.icon-phone:after {
+    background-image: url(../public/icons/phone-colored.svg);
+}
+
+.icon-drive:before,
+.icon-drive:after {
+    height: 18px;
+    width: 20px;
+}
+
+.icon-drive:before {
+    background-image: url(../public/icons/drive.svg);
+}
+
+.icon-drive:after {
+    background-image: url(../public/icons/drive-colored.svg);
+}
+
+.icon-users:before,
+.icon-users:after {
+    height: 16px;
+    width: 20px;
+}
+
+.icon-users:before {
+    background-image: url(../public/icons/users.svg);
+}
+
+.icon-users:after {
+    background-image: url(../public/icons/users-colored.svg);
+}
+
+.icon-newsletter:before,
+.icon-newsletter:after {
+    height: 18px;
+    width: 20px;
+}
+
+.icon-newsletter:before {
+    background-image: url(../public/icons/newsletter.svg);
+}
+
+.icon-newsletter:after {
+    background-image: url(../public/icons/newsletter-colored.svg);
+}
+
+.icon-cellphone:before,
+.icon-cellphone:after {
+    height: 22px;
+    width: 14px;
+}
+
+.icon-cellphone:before {
+    background-image: url(../public/icons/cellphone.svg);
+}
+
+.icon-cellphone:after {
+    background-image: url(../public/icons/cellphone-colored.svg);
+}
+
+.icon-phone-colored {
+    background-image: url(../public/icons/phone-colored.svg);
+    height: 21px;
+    width: 21px;
+}
+
+.icon-drive-colored {
+    background-image: url(../public/icons/drive-colored.svg);
+    height: 23px;
+    width: 27px;
+}
+
+.icon-users-colored {
+    background-image: url(../public/icons/users-colored.svg);
+    height: 19px;
+    width: 25px;
+}
+
+.icon-newsletter-colored {
+    background-image: url(../public/icons/newsletter-colored.svg);
+    height: 25px;
+    width: 25px;
+}
+
+.icon-cellphone-colored {
+    background-image: url(../public/icons/cellphone-colored.svg);
+    height: 28px;
+    width: 18px;
+}
+
+.icon-right {
+    background-image: url(../public/icons/arrow-right.svg);
+    height: 12px;
+    width: 12px;
+}
+
+/* Buttons Styles */
 button:hover {
     cursor: pointer;
 }
