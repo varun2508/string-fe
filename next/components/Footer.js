@@ -28,7 +28,7 @@ const Footer = () => {
                             <i className="icon-users"/>
                             <span>Social</span>
                         </Link>
-                        <Link href="#" className={styles.DockItem}>
+                        <Link href="/newsletter" className={styles.DockItem}>
                             <i className="icon-newsletter"/>
                             <span>Newsletter</span>
                         </Link>

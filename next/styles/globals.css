@@ -136,6 +136,33 @@ body .pb-0 {
     padding-bottom: 0;
 }
 
+input:not([type="radio"]),
+input:not([type="checkbox"]),
+select,
+textarea {
+    background-color: var(--bg-light-beige);
+    border: 1px solid #E9EBDF;
+    border-radius: 10px;
+    color: #747570;
+    padding: 12px;
+    font-family: var(--font-mulish);
+    font-weight: var(--font-weight-300);
+    font-size: 14px;
+    line-height: 18px;
+    width: 100%;
+}
+
+input:not([type="radio"]):not([type="checkbox"]):focus,
+select:focus,
+textarea:focus {
+    outline: none;
+}
+
+textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
 i[class^='icon-'] {
     display: inline-block;
     background-position: center;
@@ -168,6 +195,12 @@ i[class^='icon-'] {
 
 .icon-newsletter {
     background-image: url(../public/icons/email-newsletter.svg);
+}
+
+.icon-newsletter-colored {
+    background-image: url(../public/icons/email-newsletter-colored.svg);
+    height: 25px;
+    width: 25px;
 }
 
 .icon-cellphone {
@@ -325,6 +358,10 @@ button:hover {
     cursor: pointer;
 }
 
+button[type="submit"] {
+    margin-top: 20px;
+}
+
 .btn {
     border-radius: 20px;
     border-width: 0;
@@ -449,31 +486,4 @@ button:hover {
     position: relative;
     margin-bottom: 12px;
     width: 100%;
-}
-
-input:not([type="radio"]),
-input:not([type="checkbox"]),
-select,
-textarea {
-    background-color: var(--bg-light-beige);
-    border: 1px solid #E9EBDF;
-    border-radius: 10px;
-    color: #747570;
-    padding: 12px;
-    font-family: var(--font-mulish);
-    font-weight: var(--font-weight-300);
-    font-size: 14px;
-    line-height: 18px;
-    width: 100%;
-}
-
-input:not([type="radio"]):not([type="checkbox"]):focus,
-select:focus,
-textarea:focus {
-    outline: none;
-}
-
-textarea {
-    min-height: 110px;
-    resize: vertical;
 }
