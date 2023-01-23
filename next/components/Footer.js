@@ -32,7 +32,7 @@ const Footer = () => {
                             <i className="icon-newsletter"/>
                             <span>Newsletter</span>
                         </Link>
-                        <Link href="#" className={styles.DockItem}>
+                        <Link href="/superdapp" className={styles.DockItem}>
                             <i className="icon-cellphone" />
                             <span>SupperDapp</span>
                         </Link>

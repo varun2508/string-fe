@@ -207,6 +207,12 @@ i[class^='icon-'] {
     background-image: url(../public/icons/cellphone.svg);
 }
 
+.icon-cellphone-colored {
+    background-image: url(../public/icons/cellphone-colored.svg);
+    height: 28px;
+    width: 18px;
+}
+
 .icon-back {
     background-image: url(../public/icons/back.svg);
     height: 7px;
