@@ -1,31 +1,31 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import driveItems from '../data/drive-items'
+import socialItems from '../data/social-items'
 import styles from '../styles/Menu.module.css'
 
-function Drive() {
+function Social() {
     return (
         <>
             <Head>
-                <title>String | Drive</title>
+                <title>String | Social Media</title>
             </Head>
             
             <div className="page-inner pb-0">
                 <div className="page-heading">
-                    <Link href="/tech" className="button-back">
+                    <Link href="/home" className="button-back">
                         <i className="icon-back" />
                     </Link>
                     <div className="page-icon">
-                        <i className="icon-drive-colored" />
+                        <i className="icon-users-colored" />
                     </div>
-                    <h1>String Drive</h1>
+                    <h1>Social Media</h1>
                 </div>
             </div>
-            { driveItems.length > 0 ?
-                <div className={`${styles.MainMenu} pt-0`}>
-                    { driveItems.map((item, key) => 
-                        <div className={styles.MenuLink} key={key}>
+            { socialItems.length > 0 ?
+                <div className={`${styles.MainMenu} pt-0`} target="_blank">
+                    { socialItems.map((item, key) => 
+                        <Link href={item.path} className={styles.MenuLink} key={key}>
                             <div className={styles.MenuLinkIcon}>
                                 <i className={item.icon} />
                             </div>
@@ -37,7 +37,7 @@ function Drive() {
                             </div>
                             <Image src={item.image} alt={item.title} loading="lazy" />
                             <i className="icon-next" />
-                        </div>
+                        </Link>
                     )}
                 </div>
                 : ''
@@ -46,4 +46,4 @@ function Drive() {
     )
 }
 
-export default Drive;
+export default Social;

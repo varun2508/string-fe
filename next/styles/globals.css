@@ -294,6 +294,24 @@ i[class^='icon-'] {
     width: 16px;
 }
 
+.icon-twitter {
+    background-image: url(../public/icons/social-twitter.svg);
+    height: 46px;
+    width: 52px;
+}
+
+.icon-instagram {
+    background-image: url(../public/icons/social-instagram.svg);
+    height: 50px;
+    width: 50px;
+}
+
+.icon-linkedin {
+    background-image: url(../public/icons/social-linkedin.svg);
+    height: 50px;
+    width: 50px;
+}
+
 /* Footer Menu Icons */
 .icon-phone:after,
 .icon-phone:before {
@@ -461,8 +479,6 @@ button[type="submit"] {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  /* padding: 6rem; */
-  /* min-height: 100vh; */
 }
 
 .container {
