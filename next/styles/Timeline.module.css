@@ -7,11 +7,14 @@
     font-weight: var(--font-weight-700);
 }
 
-
 .TimelineFeedItem {
     display: flex;
-    padding: 20px 0 35px;
+    padding: 20px 0;
     position: relative;
+}
+
+.TimelineFeedItem:last-child {
+    padding-bottom: 0;
 }
 
 .TimelineFeedItem::before {
@@ -29,10 +32,21 @@
     margin-bottom: 16px;
 }
 
-.TimelineFeedItem > div {
-    width: 75%;
+.TimelineFeedItem div:first-child {
+    width: 100%;
+    max-width: 70%;
 }
 
 .TimelineFeedItem > div + div {
-    width: 25%;
+    padding-left: 40px;
+    max-width: 30%;
+    width: 100%;
+}
+
+.TimelineItemDate {
+    color: var(--color-blue);
+}
+
+.TimelineItemDate i {
+    margin-right: 8px;
 }

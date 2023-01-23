@@ -45,7 +45,7 @@ function Timeline() {
 
                         <div className={styles.TimelineFeedItem}>
                             <div>
-                                <h5>Released initial blockchain `${'"TestNet"'}`</h5>
+                                <h5>Released initial blockchain &#34;TestNet&#34;</h5>
                                 <p>
                                     String initial prototype was released including UDM and 
                                     prototype videos
