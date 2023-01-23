@@ -5,8 +5,7 @@ import { useRouter } from 'next/router'
 import styles from '../styles/Footer.module.css'
 
 const Footer = () => {
-    const router = useRouter()
-    const { id } = router.query
+    const { pathname } = useRouter()
 
     return (
         <footer className={styles.Footer}>
@@ -16,23 +15,38 @@ const Footer = () => {
                         <Image src={Logo} alt="String" loading="lazy" width="129" height="55" />
                     </Link>
                     <div className={styles.DockMenu}>
-                        <Link href="/contact" className={styles.DockItem}>
+                        <Link href="/contact"
+                            className={styles.DockItem}
+                            data-link={pathname == "/contact" ?? "true" }
+                        >
                             <i className="icon-phone"/>
                             <span>Contact</span>
                         </Link>
-                        <Link href="/drive" className={styles.DockItem}>
+                        <Link href="/drive"
+                            className={styles.DockItem}
+                            data-link={pathname == "/drive" ?? "true"}
+                        >
                             <i className="icon-drive"/>
                             <span>Drive</span>
                         </Link>
-                        <Link href="#" className={styles.DockItem}>
+                        <Link href="/social"
+                            className={styles.DockItem}
+                            data-link={pathname == "/social" ?? "true"}
+                        >
                             <i className="icon-users"/>
                             <span>Social</span>
                         </Link>
-                        <Link href="/newsletter" className={styles.DockItem}>
+                        <Link href="/newsletter"
+                            className={styles.DockItem}
+                            data-link={pathname == "/newsletter" ?? "true"}
+                        >
                             <i className="icon-newsletter"/>
                             <span>Newsletter</span>
                         </Link>
-                        <Link href="/superdapp" className={styles.DockItem}>
+                        <Link href="/superdapp"
+                            className={styles.DockItem}
+                            data-link={pathname == "/superdapp" ?? "true"}
+                        >
                             <i className="icon-cellphone" />
                             <span>SupperDapp</span>
                         </Link>

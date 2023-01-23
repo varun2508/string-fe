@@ -18,7 +18,7 @@ function Drive() {
                         <i className="icon-back" />
                     </Link>
                     <div className="page-icon">
-                        <i className="icon-map-colored" />
+                        <i className="icon-drive-colored" />
                     </div>
                     <h1>String Drive</h1>
                 </div>

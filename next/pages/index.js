@@ -19,7 +19,9 @@ export default function Index() {
                     height="118"
                 />
                 <h1>Welcome to a better, safer internet.</h1>
-                <Link href="/home" alt="Home">Click to enter</Link>
+                <Link href="/home" alt="Home">
+                    Click to enter
+                </Link>
             </div>
         </>
     )
