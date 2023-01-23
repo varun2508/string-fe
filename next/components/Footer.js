@@ -1,9 +1,13 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import Logo from '../public/logo.png'
+import { useRouter } from 'next/router'
 import styles from '../styles/Footer.module.css'
 
 const Footer = () => {
+    const router = useRouter()
+    const { id } = router.query
+
     return (
         <footer className={styles.Footer}>
             <div className="container">
@@ -12,7 +16,7 @@ const Footer = () => {
                         <Image src={Logo} alt="String" loading="lazy" width="129" height="55" />
                     </Link>
                     <div className={styles.DockMenu}>
-                        <Link href="#" className={styles.DockItem}>
+                        <Link href="/contact" className={styles.DockItem}>
                             <i className="icon-phone"/>
                             <span>Contact</span>
                         </Link>
