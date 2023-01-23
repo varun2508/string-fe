@@ -47,11 +47,11 @@ function Contact() {
                         </form>
                     </div>
                     <div className="col">
-                        <h4>Let's Talk</h4>
+                        <h4>Let&apos;s Talk</h4>
                         <p>
-                            Get a hold of the team to develop with String and let's
-                            work together to build the one of best nex-gen
-                            communities in blockchain.
+                            Get a hold of the team to develop with String and
+                            let&apos;s work together to build the one of
+                            best nex-gen communities in blockchain.
                         </p>
                     </div>
                 </div>

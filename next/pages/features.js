@@ -24,7 +24,7 @@ function Tech() {
                                     <b>{item.subtitle}</b>
                                 </div>
                             </div>
-                            <Image src={item.image} alt="About" loading="lazy" />
+                            <Image src={item.image} alt={item.title} loading="lazy" />
                             <i className="icon-next" />
                         </Link>
                     )}

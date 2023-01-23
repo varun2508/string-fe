@@ -128,6 +128,14 @@ header {
     padding: 40px 0;
 }
 
+body .pt-0 {
+    padding-top: 0;
+}
+
+body .pb-0 {
+    padding-bottom: 0;
+}
+
 i[class^='icon-'] {
     display: inline-block;
     background-position: center;
@@ -241,6 +249,13 @@ i[class^='icon-'] {
     background-size: var(--background-contain);
     height: 40px;
     width: 50px;
+}
+
+.icon-map-colored {
+    background-image: url(../public/icons/map-colored.svg);
+    background-size: var(--background-contain);
+    height: 23px;
+    width: 27px;
 }
 
 .icon-search {

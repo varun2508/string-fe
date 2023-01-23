@@ -20,7 +20,7 @@ const Footer = () => {
                             <i className="icon-phone"/>
                             <span>Contact</span>
                         </Link>
-                        <Link href="#" className={styles.DockItem}>
+                        <Link href="/drive" className={styles.DockItem}>
                             <i className="icon-drive"/>
                             <span>Drive</span>
                         </Link>
