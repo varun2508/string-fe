@@ -281,13 +281,25 @@ i[class^='icon-'] {
 }
 
 #__next {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#__next::before {
     background: url(../public/aaron-burden.png);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    bottom: 0;
+    content: '';
+    display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 0;
 }
 
 .main {

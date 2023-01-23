@@ -6,7 +6,7 @@ import styles from '../styles/Menu.module.css'
 
 function Tech() {
     return (
-        <div className="page">
+        <>
             <Head>
                 <title>String | Tech</title>
             </Head>
@@ -31,7 +31,7 @@ function Tech() {
                 </div>
                 : ''
             }
-        </div>
+        </>
     )
 }
 

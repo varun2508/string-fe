@@ -12,8 +12,10 @@ function TechInner() {
     const { id } = router.query
     const page = techItems.find(item => item.id === id)
 
+    if(!page) return null
+
     return (
-        <div className="page">
+        <>
             <Head>
                 <title>String | {page.title}</title>
             </Head>
@@ -37,7 +39,7 @@ function TechInner() {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 

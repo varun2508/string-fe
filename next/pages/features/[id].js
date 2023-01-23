@@ -12,8 +12,10 @@ function FeaturesInner() {
     const { id } = router.query
     const page = featuresItems.find(item => item.id === id)
 
+    if(!page) return null
+
     return (
-        <div className="page">
+        <>
             <Head>
                 <title>String | {page.title}</title>
             </Head>
@@ -37,7 +39,7 @@ function FeaturesInner() {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 
