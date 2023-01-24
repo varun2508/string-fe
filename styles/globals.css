@@ -456,15 +456,10 @@ button[type="submit"] {
 }
 
 #bg-wrapper {
-    background: url(../public/aaron-burden.png);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
-    bottom: 0;
     position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
     z-index: -1;
 }
 
