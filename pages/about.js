@@ -63,7 +63,7 @@ function About({teamMembers}) {
                                             />
                                         </div>
                                         <div className={styles.CardBack}
-                                             dangerouslySetInnerHTML={{__html: member.description}}
+                                             dangerouslySetInnerHTML={{__html: member.about}}
                                         />
                                         <hr/>
                                         <h5>{member.name}</h5>
