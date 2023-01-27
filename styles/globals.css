@@ -5,7 +5,7 @@
     --color-blue: #6D8FFF;
     --color-green: #92D5BD;
 
-    --max-width: 1200px;
+    --max-width: 1170px;
     --container-padding: 0 15px;
     --font-mulish: 'Mulish', sans-serif;
     --font-quattrocento: 'Quattrocento Sans', sans-serif;
@@ -35,7 +35,13 @@
     --font-size-44: 44px;
     --font-size-32: 32px;
     --font-size-28: 28px;
+    --font-size-26: 26px;
     --font-size-20: 20px;
+    --font-size-16: 16px;
+    --font-size-18: 18px;
+    --font-size-14: 14px;
+    --font-size-12: 12px;
+    --font-size-10: 10px;
 
     --font-weight-700: 700;
     --font-weight-600: 600;
@@ -47,7 +53,13 @@
     --line-height-55: 55px;
     --line-height-50: 50px;
     --line-height-31: 31px;
+    --line-height-29: 29px;
+    --line-height-25: 25px;
     --line-height-23: 23px;
+    --line-height-20: 20px;
+    --line-height-18: 18px;
+    --line-height-16: 16px;
+    --line-height-13: 13px;
 
     --flex: flex;
 }
@@ -79,7 +91,6 @@ body {
     font-size: var(--main-font-size);
     font-weight: var(--main-font-weight);
     line-height: var(--main-line-height);
-    /* color: rgb(var(--foreground-rgb)); */
 }
 
 a {
@@ -88,45 +99,46 @@ a {
 }
 
 p {
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-18);
     margin-bottom: 18px;
-    line-height: var(--line-height-23);
 }
 
 h1 {
-    font-size: var(--font-size-60);
+    font-size: var(--font-size-26);
+    line-height: var(--line-height-29);
     font-weight: var(--font-weight-400);
-    line-height: var(--line-height-66);
 }
 
 h2 {
-    font-size: var(--font-size-50);
+    font-size: var(--font-size-20);
     font-weight: var(--font-weight-400);
-    line-height: var(--line-height-55);
+    line-height: var(--line-height-23);
 }
 
 h3 {
-    font-size: var(--font-size-44);
+    font-size: var(--font-size-26);
+    line-height: var(--line-height-29);
     font-weight: var(--font-weight-400);
-    line-height: var(--line-height-50);
-    margin-bottom: 24px;
+    margin-bottom: 5px;
 }
 
 h4 {
-    font-size: var(--font-size-32);
+    font-size: var(--font-size-16);
     font-weight: var(--font-weight-700);
-    line-height: var(--line-height-35);
+    line-height: var(--line-height-20);
     margin-bottom: 16px;
 }
 
 h5 {
     font-family: var(--font-quattrocento);
-    font-size: var(--font-size-28);
+    font-size: var(--font-size-14);
     font-weight: var(--font-weight-700);
-    line-height: var(--line-height-31)
+    line-height: var(--line-height-16);
 }
 
 header {
-    padding: 40px 0;
+    padding: 24px 0;
 }
 
 body .pt-0 {
@@ -164,6 +176,11 @@ textarea {
     resize: vertical;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Global Icons */
 i[class^='icon-'] {
     display: inline-block;
@@ -174,15 +191,15 @@ i[class^='icon-'] {
 
 .icon-back {
     background-image: url(../public/icons/back.svg);
-    height: 7px;
-    width: 35px;
+    height: 4px;
+    width: 20px;
 }
 
 .icon-next {
     background-image: url(../public/icons/menu-next.svg);
     margin-left: auto;
-    height: 45px;
-    width: 62px;
+    height: 20px;
+    width: 27px;
 }
 
 .icon-about {
@@ -424,17 +441,13 @@ button:hover {
     cursor: pointer;
 }
 
-button[type="submit"] {
-    margin-top: 20px;
-}
-
 .btn {
     border-radius: 20px;
     border-width: 0;
     font-family: var(--font-mulish);
     font-weight: var(--font-weight-300);
-    font-size: 18px;
-    line-height: 23px;
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-20);
     padding: 10px;
     min-width: 170px;
 }
@@ -456,10 +469,14 @@ button[type="submit"] {
 }
 
 #bg-wrapper {
+    bottom: 0;
     position: fixed;
     height: 100vh;
-    width: 100vw;
     overflow: hidden;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100vw;
     z-index: -1;
 }
 
@@ -467,62 +484,73 @@ button[type="submit"] {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    margin: 0 15px;
+    position: relative;
 }
 
 .main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    top: 110px;
+    position: absolute;
+    max-width: 1170px;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    bottom: 130px;
+    background-color: var(--bg-light-beige);
+    border-radius: var(--border-radius-md);
 }
 
 .container {
     max-width: var(--max-width);
     margin: var(--margin-auto);
-    padding: var(--container-padding);
     width: var(--width-100);
 }
 
 .row-col-2 {
     display: flex;
-    flex-direction: row;
-    gap: 60px;
-}
-
-.row-col-2 .col {
-    width: 50%;
+    flex-direction: column;
 }
 
 .button-back {
-    padding: 15px 0;
-    position: absolute;
-    left: -60px;
+    display: inline-block;
+    margin-left: 40px;
+    padding: 10px 0;
+    line-height: 0;
 }
 
 .page-content {
-    background-color: var(--bg-light-beige);
-    border-radius: var(--border-radius-lg);
-    margin-bottom: 40px;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .page-inner {
-    padding: 60px 100px;
+    padding: 20px;
+}
+
+.page-inner .button-back {
+    margin-left: 0;
+    margin-bottom: 10px;
 }
 
 .page-intro {
     display: flex;
-    gap: 60px;
-}
-
-.page-intro > div {
-    width: 50%;
 }
 
 .page-heading {
     align-items: center;
     display: flex;
     position: relative;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 }
 
 .page-icon {
@@ -532,17 +560,137 @@ button[type="submit"] {
     border-radius: var(--border-radius-sm);
     display: flex;
     justify-content: center;
-    margin-right: 25px;
-    height: 60px;
-    width: 60px;
+    margin-right: 12px;
+    height: 40px;
+    width: 40px;
 }
 
 .page-icon i {
-    height: 30px;
+    height: 20px;
 }
 
 .form-row {
     position: relative;
     margin-bottom: 12px;
     width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+    .page-intro {
+        gap: 60px;
+    }
+
+    .page-intro > div {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .page-intro {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    p {
+        line-height: var(--line-height-23);
+    }
+
+    h1 {
+        font-size: var(--font-size-60);
+        line-height: var(--line-height-66);
+    }
+
+    h2 {
+        font-size: var(--font-size-50);
+        font-weight: var(--font-weight-400);
+        line-height: var(--line-height-55);
+    }
+
+    h3 {
+        font-size: var(--font-size-44);
+        font-weight: var(--font-weight-400);
+        line-height: var(--line-height-50);
+        margin-bottom: 24px;
+    }
+
+    h4 {
+        font-size: var(--font-size-32);
+        font-weight: var(--font-weight-700);
+        line-height: var(--line-height-35);
+        margin-bottom: 16px;
+    }
+
+    h5 {
+        font-size: var(--font-size-28);
+        line-height: var(--line-height-31)
+    }
+
+    header {
+        padding: 40px 0;
+    }
+
+    button[type="submit"] {
+        margin-top: 20px;
+    }
+
+    .btn {
+        font-size: var(--font-size-18);
+        line-height: var(--line-height-23);
+    }
+
+    .icon-next {
+        height: 45px;
+        width: 62px;
+    }
+
+    .icon-back {
+        height: 7px;
+        width: 35px;
+    }
+
+    .main {
+        border-radius: var(--border-radius-lg);
+        bottom: 140px;
+        top: 200px;
+    }
+
+    .row-col-2 {
+        flex-direction: row;
+        gap: 60px;
+    }
+
+    .row-col-2 .col {
+        width: 50%;
+    }
+
+    .page-inner {
+        padding: 35px 100px 60px;
+    }
+    
+    .page-heading {
+        margin-bottom: 35px;
+    }
+
+    .page-icon {
+        margin-right: 25px;
+        height: 60px;
+        width: 60px;
+    }
+
+    .page-icon i {
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    button[type="submit"] {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .button-back {
+        margin-right: 15px;
+    }
 }

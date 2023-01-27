@@ -1,10 +1,11 @@
 .TimelineFeed {
     display: flex;
-    gap: 100px;
+    flex-direction: column;
 }
 
 .TimelineFeed h2 {
     font-weight: var(--font-weight-700);
+    margin-bottom: 16px;
 }
 
 .TimelineFeedItem {
@@ -24,12 +25,12 @@
     display: block;
     position: absolute;
     top: 0;
-    height: 2px;
+    height: 1px;
     width: 100%;
 }
 
 .TimelineFeedItem h5 {
-    margin-bottom: 16px;
+    margin-bottom: 10px;
 }
 
 .TimelineFeedItem div:first-child {
@@ -38,7 +39,7 @@
 }
 
 .TimelineFeedItem > div + div {
-    padding-left: 40px;
+    padding-left: 5px;
     max-width: 30%;
     width: 100%;
 }
@@ -48,5 +49,43 @@
 }
 
 .TimelineItemDate i {
-    margin-right: 8px;
+    margin-right: 5px;
+}
+
+@media screen and (min-width: 992px) {
+    .TimelineFeed {
+        flex-direction: row;
+        gap: 10%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .TimelineItemDate i {
+        margin-right: 8px;
+    }
+
+    .TimelineFeedItem h5 {
+        margin-bottom: 16px;
+    }
+
+    .TimelineFeedItem > div + div {
+        padding-left: 40px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .TimelineItemDate i {
+        height: 8px;
+        width: 8px;
+    }
+
+    .TimelineFeedItem p {
+        margin-bottom: 0;
+        font-size: var(--font-size-12);
+        line-height: var(--line-height-16);
+    }
+
+    .TimelineItemDate {
+        font-size: var(--font-size-12)
+    }
 }

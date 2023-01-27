@@ -1,13 +1,13 @@
 .TeamItems {
+    column-gap: 57px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     padding-top: 18px;
-    column-gap: 57px;
 }
 
 .TeamMember {
     position: relative;
-    margin-bottom: 40px;
     perspective: 1000px;
     transform: translate3d(0,0,0);
     max-width: 285px;
@@ -90,4 +90,14 @@
     transform: rotateY(0);
 }
 
+@media screen and (min-width: 768px) {
+    .TeamMember {
+        margin-bottom: 40px;
+    }
+}
 
+@media screen and (max-width: 767px) {
+    .Card {
+        padding-bottom: 8px;
+    }
+}

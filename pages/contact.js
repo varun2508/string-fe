@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import Link from 'next/link'
+import BackButton from '../components/BackButton'
+import styles from '../styles/Contact.module.css'
 
 function Contact() {
     return (
@@ -7,18 +8,24 @@ function Contact() {
             <Head>
                 <title>String | Contact Us</title>
             </Head>
-            
+
             <div className="page-inner">
+                <BackButton />
                 <div className="page-heading">
-                    <Link href="/features" className="button-back">
-                        <i className="icon-back" />
-                    </Link>
                     <div className="page-icon">
                         <i className="icon-phone-colored" />
                     </div>
                     <h1>Contact Us</h1>
                 </div>
-                <div className="row-col-2">
+                <div className={`${styles.ContactForm} row-col-2`}>
+                    <div className="col">
+                        <h4>Let&apos;s Talk</h4>
+                        <p>
+                            Get a hold of the team to develop with String and
+                            let&apos;s work together to build the one of
+                            best nex-gen communities in blockchain.
+                        </p>
+                    </div>
                     <div className="col">
                         <form action="#" method="POST">
                             <div className="form-row">
@@ -45,14 +52,6 @@ function Contact() {
                                 </button>
                             </div>
                         </form>
-                    </div>
-                    <div className="col">
-                        <h4>Let&apos;s Talk</h4>
-                        <p>
-                            Get a hold of the team to develop with String and
-                            let&apos;s work together to build the one of
-                            best nex-gen communities in blockchain.
-                        </p>
                     </div>
                 </div>
             </div>

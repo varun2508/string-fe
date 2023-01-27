@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import BackButton from '../components/BackButton'
 
 function Newsletter() {
     return (
@@ -7,12 +8,10 @@ function Newsletter() {
             <Head>
                 <title>String | Newsletter</title>
             </Head>
-            
+
             <div className="page-inner">
+                <BackButton />
                 <div className="page-heading">
-                    <Link href="/features" className="button-back">
-                        <i className="icon-back" />
-                    </Link>
                     <div className="page-icon">
                         <i className="icon-newsletter-colored" />
                     </div>

@@ -5,10 +5,9 @@
 }
 
 .Dock {
-
     backdrop-filter: blur(50px);
     border-radius: var(--border-radius-md);
-    padding: 15px 40px;
+    padding: 14px 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,7 +22,6 @@
 
 .DockMenu {
     display: var(--flex);
-    gap: 40px;
 }
 
 .DockItem {
@@ -85,4 +83,31 @@
     font-weight: 700;
     font-size: 12px;
     line-height: 13px;
+}
+
+@media screen and (max-width: 767px) {
+    .DockLogo {
+        display: none;
+    }
+    
+    .DockMenu {
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .Dock {
+        padding: 15px 40px;
+    }
+
+    .DockMenu {
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .DockItem span {
+        font-size: 10px;
+    }
 }

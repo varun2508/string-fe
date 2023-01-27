@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import BackButton from '../components/BackButton'
 import featuresItems from '../data/features-items'
 import styles from '../styles/Menu.module.css'
 
@@ -13,6 +14,7 @@ function Tech() {
 
             { featuresItems.length > 0 ?
                 <div className={styles.MainMenu}>
+                    <BackButton />
                     { featuresItems.map((item, key) => 
                         <Link href={item.path} className={styles.MenuLink} key={key}>
                             <div className={styles.MenuLinkIcon}>
