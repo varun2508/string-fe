@@ -83,15 +83,19 @@
 }
 
 @media screen and (max-width: 767px) {
-    .MainMenu a:first-child {
+    .MainMenu a:not(.MenuLink):first-child {
         margin-top: 14px;
         margin-left: 0;
     }
 
-    .MenuLinkText div strong,
-    .MenuLinkText div span {
+    .MenuLinkText div strong {
         font-size: 12px;
         line-height: 15px;
+    }
+
+    .MenuLinkText div span {
+        font-size: 10px;
+        line-height: 13px;
     }
 
     .MenuLink { 

@@ -444,6 +444,7 @@ button:hover {
 .btn {
     border-radius: 20px;
     border-width: 0;
+    color: var(--color-black);
     font-family: var(--font-mulish);
     font-weight: var(--font-weight-300);
     font-size: var(--font-size-16);
