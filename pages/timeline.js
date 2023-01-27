@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Link from 'next/link'
+import BackButton from '../components/BackButton'
 import styles from '../styles/Timeline.module.css'
 
 function Timeline() {
@@ -11,10 +11,8 @@ function Timeline() {
             </Head>
 
             <div className="page-inner">
+                <BackButton />
                 <div className="page-heading">
-                    <Link href="/home" className="button-back">
-                        <i className="icon-back" />
-                    </Link>
                     <div className="page-icon">
                         <i className="icon-timeline" />
                     </div>

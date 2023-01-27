@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Link from 'next/link'
+import BackButton from '../../components/BackButton'
 import { useRouter } from 'next/router'
 import techItems from '../../data/tech-items'
 
@@ -17,12 +17,10 @@ function TechInner() {
             <Head>
                 <title>String | {page.title}</title>
             </Head>
-            
+
             <div className="page-inner">
+                <BackButton />
                 <div className="page-heading">
-                    <Link href="/tech" className="button-back">
-                        <i className="icon-back" />
-                    </Link>
                     <div className="page-icon">
                         <i className={page.icon} />
                     </div>

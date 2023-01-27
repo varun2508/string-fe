@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import BackButton from '../components/BackButton'
 import socialItems from '../data/social-items'
 import styles from '../styles/Menu.module.css'
 
@@ -10,12 +11,10 @@ function Social() {
             <Head>
                 <title>String | Social Media</title>
             </Head>
-            
+
             <div className="page-inner pb-0">
+                <BackButton />
                 <div className="page-heading">
-                    <Link href="/home" className="button-back">
-                        <i className="icon-back" />
-                    </Link>
                     <div className="page-icon">
                         <i className="icon-users-colored" />
                     </div>

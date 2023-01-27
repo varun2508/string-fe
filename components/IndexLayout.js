@@ -7,7 +7,7 @@ const IndexLayout = ({ children }) => {
         <>
             <DynamicBackground />
             <Header />
-            <main className="main">
+            <main>
                 <div className="container">
                     {children}
                 </div>

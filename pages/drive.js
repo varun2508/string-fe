@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Link from 'next/link'
+import BackButton from '../components/BackButton'
 import driveItems from '../data/drive-items'
 import styles from '../styles/Menu.module.css'
 
@@ -10,12 +10,10 @@ function Drive() {
             <Head>
                 <title>String | Drive</title>
             </Head>
-            
+
             <div className="page-inner pb-0">
+                <BackButton />
                 <div className="page-heading">
-                    <Link href="/tech" className="button-back">
-                        <i className="icon-back" />
-                    </Link>
                     <div className="page-icon">
                         <i className="icon-drive-colored" />
                     </div>
