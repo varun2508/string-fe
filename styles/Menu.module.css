@@ -1,5 +1,5 @@
 .MainMenu {
-    padding: 6px 12px;
+    padding: 6px 20px;
 }
 
 .MenuLink {
@@ -76,17 +76,26 @@
         height: 100px;
         width: 100px;
     }
-    
+
     .MenuLinkIcon i {
         height: 50px;
     }
 }
 
 @media screen and (max-width: 767px) {
+    .MainMenu a:first-child {
+        margin-top: 14px;
+        margin-left: 0;
+    }
+
     .MenuLinkText div strong,
     .MenuLinkText div span {
         font-size: 12px;
         line-height: 15px;
+    }
+
+    .MenuLink { 
+        margin: 0 -12px
     }
 }
 
