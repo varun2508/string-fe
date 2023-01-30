@@ -42,9 +42,18 @@ export default BlogInner;
 export async function getServerSideProps(context) {
     const { query } = context;
     const { id } = query;
-    const res = await fetch(`${process.env.ApiUrl}/posts/${id}`)
+    const res = await fetch(
+        `${process.env.ApiUrl}/posts/${id}`,
+        {
+            headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json'
+            }
+        })
+
     const post = await res.json()
-    if (!post) {
+
+    if (!post || res.status == 404) {
         return {
             notFound: true,
         }
