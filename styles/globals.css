@@ -140,6 +140,8 @@ h5 {
 
 header {
     padding: 24px 0;
+    position: fixed;
+    top: 0;
 }
 
 body .pt-0 {

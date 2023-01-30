@@ -1,7 +1,9 @@
 .Footer {
     margin-bottom: 20px;
-    width: var(--width-100);
+    position: fixed;
+    bottom: 0;
     margin-top: auto;
+    width: var(--width-100);
 }
 
 .Dock {
