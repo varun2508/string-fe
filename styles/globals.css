@@ -142,6 +142,7 @@ header {
     padding: 24px 0;
     position: fixed;
     top: 0;
+    width: calc(100% - 30px);
 }
 
 body .pt-0 {
