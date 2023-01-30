@@ -52,7 +52,7 @@ const menuItems = [
         description: 'Previous: String Unified Data Model',
         icon: 'icon-blog',
         image: BlogImage,
-        path: '#',
+        path: '/blog',
     }
 ]
 

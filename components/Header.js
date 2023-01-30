@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from '../styles/Header.module.css'
 
 const Header = () => {
@@ -10,10 +11,15 @@ const Header = () => {
     return (
         <header>
             <div className="container">
-                <div className={styles.Note}>
-                    <h5>{weekDay}, {month} {monthDay}</h5>
-                    <p>145 Active Nodes</p>
-                    <p>0.00045kWh</p>
+                <div className={styles.Content}>
+                    <div className={styles.Note}>
+                        <h5>{weekDay}, {month} {monthDay}</h5>
+                        <p>145 Active Nodes</p>
+                        <p>0.00045kWh</p>
+                    </div>
+                    <Link href="/home" className={styles.Home}>
+                        <i className="icon-home"></i>
+                    </Link>
                 </div>
             </div>
         </header>

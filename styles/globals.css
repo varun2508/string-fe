@@ -448,6 +448,12 @@ i[class^='icon-'] {
     width: 12px;
 }
 
+.icon-home {
+    background-image: url(../public/icons/home.svg);
+    height: 17px;
+    width: 20px;
+}
+
 /* Buttons Styles */
 button:hover {
     cursor: pointer;
@@ -510,12 +516,13 @@ button:hover {
     position: fixed;
     max-width: 1170px;
     left: 50%;
-    width: calc(100% - 30px);
+    min-height: 300px;
     transform: translateX(-50%);
     overflow: hidden;
     bottom: 130px;
     background-color: var(--bg-light-beige);
     border-radius: var(--border-radius-md);
+    width: calc(100% - 30px);
 }
 
 .container {
