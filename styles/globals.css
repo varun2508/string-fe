@@ -642,7 +642,7 @@ button:hover {
     }
 
     header {
-        padding: 40px 0;
+        padding: 40px 0 27px;
     }
 
     button[type="submit"] {
@@ -667,7 +667,7 @@ button:hover {
     .main {
         border-radius: var(--border-radius-lg);
         bottom: 140px;
-        top: 200px;
+        top: 186px;
     }
 
     .row-col-2 {
