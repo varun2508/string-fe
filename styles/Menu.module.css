@@ -41,12 +41,9 @@
     margin-bottom: 4px;
 }
 
-.MenuLinkText div {
+.MenuLinkText p {
     display: flex;
-}
-
-.MenuLinkText div strong,
-.MenuLinkText div span {
+    margin: 0;
 }
 
 .icon-next {
@@ -88,12 +85,12 @@
         margin-left: 0;
     }
 
-    .MenuLinkText div strong {
+    .MenuLinkText p strong {
         font-size: 12px;
         line-height: 15px;
     }
 
-    .MenuLinkText div span {
+    .MenuLinkText p span {
         font-size: 10px;
         line-height: 13px;
     }
@@ -110,13 +107,13 @@
         width: 210px;
     }
 
-    .MenuLinkText div {
+    .MenuLinkText p {
         display: flex;
         gap: 45px;
     }
 
-    .MenuLinkText div strong,
-    .MenuLinkText div span {
+    .MenuLinkText p strong,
+    .MenuLinkText p span {
         width: 50%;
     }
 }
@@ -130,7 +127,7 @@
         display: none;
     }
     
-    .MenuLinkText div {
+    .MenuLinkText p {
         flex-direction: column;
     }
 }
