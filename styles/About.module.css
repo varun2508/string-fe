@@ -45,6 +45,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    overflow-y: auto;
     transition: .5s;
     perspective: preserve-3d;
     transform: rotateY(-180deg);
