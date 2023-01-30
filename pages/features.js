@@ -17,15 +17,15 @@ function Tech() {
                     <BackButton />
                     { featuresItems.map((item, key) => 
                         <Link href={item.path} className={styles.MenuLink} key={key}>
-                            <div className={styles.MenuLinkIcon}>
+                            <span className={styles.MenuLinkIcon}>
                                 <i className={item.icon} />
-                            </div>
-                            <div className={styles.MenuLinkText}>
+                            </span>
+                            <span className={styles.MenuLinkText}>
                                 <h3>{item.title}</h3>
-                                <div>
+                                <p>
                                     <b>{item.subtitle}</b>
-                                </div>
-                            </div>
+                                </p>
+                            </span>
                             <Image src={item.image} alt={item.title} loading="lazy" />
                             <i className="icon-next" />
                         </Link>
