@@ -44,7 +44,7 @@ const menuItems = [
         description: '750,000,000 Token Supply',
         icon: 'icon-investors',
         image: InvestorsImage,
-        path: '#',
+        path: '/investors',
     },
     {
         title: 'Blog',
