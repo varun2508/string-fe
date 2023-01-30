@@ -48,7 +48,7 @@ const Footer = () => {
                             data-link={pathname == "/superdapp" ?? "true"}
                         >
                             <i className="icon-cellphone" />
-                            <span>SupperDapp</span>
+                            <span>SuperDapp</span>
                         </Link>
                     </div>
                 </div>

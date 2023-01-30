@@ -496,10 +496,10 @@ button:hover {
     justify-content: space-between;
     align-items: center;
     top: 110px;
-    position: absolute;
+    position: fixed;
     max-width: 1170px;
     left: 50%;
-    width: 100%;
+    width: calc(100% - 30px);
     transform: translateX(-50%);
     overflow: hidden;
     bottom: 130px;
