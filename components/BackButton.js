@@ -5,7 +5,10 @@ const BackButton = () => {
     const router = useRouter()
 
     return (
-        <Link href="/" className="button-back" onClick={() => router.back()}>
+        <Link href="/"
+            className="button-back"
+            onClick={(e) => { e.preventDefault(); router.back(); } }
+        >
             <i className="icon-back"/>
         </Link>
     )

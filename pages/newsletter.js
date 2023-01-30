@@ -24,7 +24,7 @@ function Newsletter() {
                             updates from the String team.
                         </p>
                         <p>
-                            Giveaways, airdrops, prizes, early access and more!
+                            Giveaways, prizes, early access and more!
                         </p>
                     </div>
                     <div className="col">

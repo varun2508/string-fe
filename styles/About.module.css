@@ -62,8 +62,9 @@
 .CardBack {
     border-radius: var(--border-radius-sm);
     overflow: hidden;
-    width: 285px;
+    max-width: 285px;
     height: 280px;
+    width: 100%;
 }
 
 .CardFront img {
