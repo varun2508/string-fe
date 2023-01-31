@@ -12,6 +12,8 @@ function InvestorsInner() {
     const { id } = router.query
     const page = techItems.find(item => item.id === id)
 
+    if(!page) return null
+
     return (
         <>
             <Head>
