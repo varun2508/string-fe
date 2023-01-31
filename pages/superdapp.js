@@ -12,7 +12,7 @@ function Superdapp() {
     const submitForm = async (e) => {
         e.preventDefault();
         setIsDisabled(true)
-        let req = await fetch('https://admin-staging.string3.org/api/newsletter', {
+        let req = await fetch('/api/newsletter', {
             method: 'POST',
             body: JSON.stringify({
                     "email": emailRef.current.value
