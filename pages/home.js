@@ -15,16 +15,16 @@ function Home() {
                 <div className={styles.MainMenu}>
                     { menuItems.map((item, key) => 
                         <Link href={item.path} className={styles.MenuLink} key={key}>
-                            <div className={styles.MenuLinkIcon}>
+                            <span className={styles.MenuLinkIcon}>
                                 <i className={item.icon} />
-                            </div>
-                            <div className={styles.MenuLinkText}>
+                            </span>
+                            <span className={styles.MenuLinkText}>
                                 <h1>{item.title}</h1>
-                                <div>
+                                <p>
                                     <strong>{item.subtitle}</strong>
                                     <span>{item.description}</span>
-                                </div>
-                            </div>
+                                </p>
+                            </span>
                             <Image src={item.image} alt={item.title} loading="lazy" />
                             <i className="icon-next" />
                         </Link>

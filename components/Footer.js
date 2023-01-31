@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import Logo from '../public/logo.png'
+import Logo from '../public/logo.svg'
 import { useRouter } from 'next/router'
 import styles from '../styles/Footer.module.css'
 
@@ -11,7 +11,7 @@ const Footer = () => {
         <footer className={styles.Footer}>
             <div className="container">
                 <div className={styles.Dock}>
-                    <Link href="/" className={styles.DockLogo}>
+                    <Link href="/home" className={styles.DockLogo}>
                         <Image src={Logo} alt="String" loading="lazy" width="129" height="55" />
                     </Link>
                     <div className={styles.DockMenu}>
@@ -48,7 +48,7 @@ const Footer = () => {
                             data-link={pathname == "/superdapp" ?? "true"}
                         >
                             <i className="icon-cellphone" />
-                            <span>SupperDapp</span>
+                            <span>SuperDapp</span>
                         </Link>
                     </div>
                 </div>

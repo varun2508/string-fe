@@ -1,13 +1,13 @@
 .TeamItems {
+    column-gap: 57px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     padding-top: 18px;
-    column-gap: 57px;
 }
 
 .TeamMember {
     position: relative;
-    margin-bottom: 40px;
     perspective: 1000px;
     transform: translate3d(0,0,0);
     max-width: 285px;
@@ -45,6 +45,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    overflow-y: auto;
     transition: .5s;
     perspective: preserve-3d;
     transform: rotateY(-180deg);
@@ -62,8 +63,9 @@
 .CardBack {
     border-radius: var(--border-radius-sm);
     overflow: hidden;
-    width: 285px;
+    max-width: 285px;
     height: 280px;
+    width: 100%;
 }
 
 .CardFront img {
@@ -90,4 +92,14 @@
     transform: rotateY(0);
 }
 
+@media screen and (min-width: 768px) {
+    .TeamMember {
+        margin-bottom: 40px;
+    }
+}
 
+@media screen and (max-width: 767px) {
+    .Card {
+        padding-bottom: 8px;
+    }
+}

@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import {useRef, useState} from 'react'
-
+import BackButton from '../components/BackButton'
 
 function Newsletter() {
     const [isAdded, setIsAdded] = useState(false)
@@ -32,10 +32,8 @@ function Newsletter() {
             </Head>
 
             <div className="page-inner">
+                <BackButton />
                 <div className="page-heading">
-                    <Link href="/features" className="button-back">
-                        <i className="icon-back"/>
-                    </Link>
                     <div className="page-icon">
                         <i className="icon-newsletter-colored"/>
                     </div>
@@ -49,7 +47,7 @@ function Newsletter() {
                             updates from the String team.
                         </p>
                         <p>
-                            Giveaways, airdrops, prizes, early access and more!
+                            Giveaways, prizes, early access and more!
                         </p>
                     </div>}
 

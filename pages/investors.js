@@ -2,20 +2,21 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import BackButton from '../components/BackButton'
-import featuresItems from '../data/features-items'
+import ExistingInvestors from '../public/existing-investors.jpg'
+import investorsItems from '../data/investors-items'
 import styles from '../styles/Menu.module.css'
 
-function Features() {
+function Investors() {
     return (
         <>
             <Head>
-                <title>String | Features</title>
+                <title>String | Investors</title>
             </Head>
 
-            { featuresItems.length > 0 ?
+            { investorsItems.length > 0 ?
                 <div className={styles.MainMenu}>
                     <BackButton />
-                    { featuresItems.map((item, key) => 
+                    { investorsItems.map((item, key) => 
                         <Link href={item.path} className={styles.MenuLink} key={key}>
                             <span className={styles.MenuLinkIcon}>
                                 <i className={item.icon} />
@@ -30,6 +31,20 @@ function Features() {
                             <i className="icon-next" />
                         </Link>
                     )}
+
+                    <Link href='/investors/existing-investors' className={styles.MenuLink}>
+                        <span className={styles.MenuLinkIcon}>
+                            <i className="icon-existing-investors" />
+                        </span>
+                        <span className={styles.MenuLinkText}>
+                            <h3>Investors</h3>
+                            <p>
+                                <b>See our existing investors</b>
+                            </p>
+                        </span>
+                        <Image src={ExistingInvestors} alt="Investors" loading="lazy" />
+                        <i className="icon-next" />
+                    </Link>
                 </div>
                 : ''
             }
@@ -37,4 +52,4 @@ function Features() {
     )
 }
 
-export default Features;
+export default Investors;

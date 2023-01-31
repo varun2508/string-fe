@@ -1,8 +1,20 @@
+import React, { useEffect, useRef } from 'react'
+import { usePathname } from 'next/navigation'
+import DynamicBackground from "./DynamicBackground"
 import Header from "./Header"
 import Footer from "./Footer"
-import DynamicBackground from "./DynamicBackground"
 
 const MainLayout = ({ children }) => {
+    const pathname = usePathname()
+    const titleRef = useRef()
+
+    useEffect(() => {
+        if(titleRef) {
+            titleRef.current.scroll({
+                top: 0,
+            })
+        }
+    }, [pathname])
 
     return (
         <>
@@ -10,7 +22,7 @@ const MainLayout = ({ children }) => {
             <Header />
             <main className="main">
                 <div className="container">
-                    <div className="page-content">
+                    <div className="page-content" ref={titleRef}>
                         {children}
                     </div>
                 </div>

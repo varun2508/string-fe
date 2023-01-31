@@ -1,11 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Link from 'next/link'
+import BackButton from '../components/BackButton'
 import AboutImage from '../public/about-big.png'
 import styles from '../styles/About.module.css'
 
 function About({teamMembers}) {
-
     return (
         <>
             <Head>
@@ -13,10 +12,8 @@ function About({teamMembers}) {
             </Head>
 
             <div className="page-inner">
+                <BackButton />
                 <div className="page-heading">
-                    <Link href="/home" className="button-back">
-                        <i className="icon-back"/>
-                    </Link>
                     <div className="page-icon">
                         <i className="icon-about"/>
                     </div>

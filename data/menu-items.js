@@ -44,7 +44,7 @@ const menuItems = [
         description: '750,000,000 Token Supply',
         icon: 'icon-investors',
         image: InvestorsImage,
-        path: '#',
+        path: '/investors',
     },
     {
         title: 'Blog',
@@ -52,7 +52,7 @@ const menuItems = [
         description: 'Previous: String Unified Data Model',
         icon: 'icon-blog',
         image: BlogImage,
-        path: '#',
+        path: '/blog',
     }
 ]
 

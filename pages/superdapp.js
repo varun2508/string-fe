@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import BackButton from '../components/BackButton'
 
 function Superdapp() {
     return (
@@ -7,12 +8,10 @@ function Superdapp() {
             <Head>
                 <title>String | SuperDapp</title>
             </Head>
-            
+
             <div className="page-inner">
+                <BackButton />
                 <div className="page-heading">
-                    <Link href="/features" className="button-back">
-                        <i className="icon-back" />
-                    </Link>
                     <div className="page-icon">
                         <i className="icon-cellphone-colored" />
                     </div>

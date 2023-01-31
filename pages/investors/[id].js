@@ -2,15 +2,15 @@ import Head from 'next/head'
 import Image from 'next/image'
 import BackButton from '../../components/BackButton'
 import { useRouter } from 'next/router'
-import featuresItems from '../../data/features-items'
+import techItems from '../../data/investors-items'
 
-function FeaturesInner() {
+function InvestorsInner() {
     const router = useRouter()
 
     if(!router.isReady) return null
 
     const { id } = router.query
-    const page = featuresItems.find(item => item.id === id)
+    const page = techItems.find(item => item.id === id)
 
     return (
         <>
@@ -39,4 +39,4 @@ function FeaturesInner() {
     )
 }
 
-export default FeaturesInner;
+export default InvestorsInner;
