@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import { usePathname } from 'next/navigation'
 import DynamicBackground from "./DynamicBackground"
+import Transition from "./Transition"
 import Header from "./Header"
 import Footer from "./Footer"
 
@@ -20,13 +21,15 @@ const MainLayout = ({ children }) => {
         <>
             <DynamicBackground />
             <Header />
-            <main className="main">
-                <div className="container">
-                    <div className="page-content" ref={titleRef}>
-                        {children}
+            <Transition>
+                <main className="main">
+                    <div className="container">
+                        <div className="page-content" ref={titleRef}>
+                            {children}
+                        </div>
                     </div>
-                </div>
-            </main>
+                </main>
+            </Transition>
             <Footer />
         </>
     )

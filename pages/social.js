@@ -24,7 +24,7 @@ function Social() {
             { socialItems.length > 0 ?
                 <div className={`${styles.MainMenu} pt-0`} target="_blank">
                     { socialItems.map((item, key) => 
-                        <Link href={item.path} className={styles.MenuLink} key={key}>
+                        <Link href={item.path} className={styles.MenuLink} key={key} target="_blank">
                             <div className={styles.MenuLinkIcon}>
                                 <i className={item.icon} />
                             </div>

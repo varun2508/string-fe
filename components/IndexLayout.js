@@ -1,8 +1,8 @@
 import Header from "./Header"
 import DynamicBackground from "./DynamicBackground"
+import Transition from "./Transition"
 
 const IndexLayout = ({ children }) => {
-
     return (
         <>
             <DynamicBackground />
