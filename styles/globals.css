@@ -193,6 +193,19 @@ img {
     height: auto;
 }
 
+.error-msg {
+    margin: 5px 0 0 5px;
+    display: block;
+    font-size: 12px;
+    color: #ff0000;
+}
+
+.success-msg {
+    color: #4caf50;
+    text-align: center;
+    margin: 50px;
+}
+
 /* Global Icons */
 i[class^='icon-'] {
     display: inline-block;
@@ -467,6 +480,11 @@ i[class^='icon-'] {
 }
 
 /* Buttons Styles */
+button[disabled] {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
 button:hover {
     cursor: pointer;
 }
