@@ -38,26 +38,4 @@ const Transition = ({ children }) => {
     )
 }
 
-// const Transition = ({ children }) => {
-//     const { asPath } = useRouter();
-// 
-//     return (
-//         <div className="effect-1">
-//             <AnimatePresence
-//                 exitBeforeEnter
-//             >
-//                 <motion.div
-//                     key={asPath}
-//                     variants={variants}
-//                     animate="in"
-//                     initial="out"
-//                     exit="out"
-//                 >
-//                     {children}
-//                 </motion.div>
-//             </AnimatePresence>
-//         </div>
-//     )
-// }
-
 export default Transition
