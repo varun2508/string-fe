@@ -58,7 +58,7 @@ function Newsletter() {
                     </div>
                     <div className="col">
                         <form action="#" method="POST">
-                            <div>
+                            <div className="form-row">
                                 <input type="email" ref={emailRef} name="email" placeholder="Email"/>
                                 {errors.map((error, index)=><span className="error-msg" key={index}>{error.title}</span>)}
                             </div>
