@@ -7,13 +7,11 @@ const IndexLayout = ({ children }) => {
         <>
             <DynamicBackground />
             <Header />
-            <Transition>
-                <main>
-                    <div className="container">
-                        {children}
-                    </div>
-                </main>
-            </Transition>
+            <main>
+                <div className="container">
+                    {children}
+                </div>
+            </main>
         </>
     )
 }
