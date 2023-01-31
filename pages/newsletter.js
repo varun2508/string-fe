@@ -5,11 +5,13 @@ import BackButton from '../components/BackButton'
 
 function Newsletter() {
     const [isAdded, setIsAdded] = useState(false)
+    const [isDisabled, setIsDisabled] = useState(false)
     const [errors, setErrors] = useState([])
     const emailRef = useRef(0)
 
-    const onclick = async (e) => {
-        e.preventDefault();
+    const submitForm = async (e) => {
+        e.preventDefault()
+        setIsDisabled(true)
         let req = await fetch('/api/newsletter', {
             method: 'POST',
             body: JSON.stringify({
@@ -17,12 +19,16 @@ function Newsletter() {
                 }
             ),
         })
-        let resp = await req.json();
+
+        let resp = await req.json()
+
         if (req.ok) {
             setIsAdded(true)
         } else {
             setErrors(resp?.errors)
         }
+
+        setIsDisabled(false)
     }
 
     return (
@@ -39,9 +45,9 @@ function Newsletter() {
                     </div>
                     <h1>Newsletter</h1>
                 </div>
-                <div className="row-col-2">
-                    {isAdded && <h3>Thank You for Subscribing</h3>}
-                    {!isAdded && <div className="col">
+                {isAdded && <h5 className="success-msg">Thank You for Subscribing</h5>}
+                {!isAdded && <div className="row-col-2">
+                    <div className="col">
                         <p>
                             Join our weekly newsletter for all bleeding-edge
                             updates from the String team.
@@ -49,24 +55,26 @@ function Newsletter() {
                         <p>
                             Giveaways, prizes, early access and more!
                         </p>
-                    </div>}
-
-                    {!isAdded && <div className="col">
+                    </div>
+                    <div className="col">
                         <form action="#" method="POST">
-                            <div className="form-row">
+                            <div>
                                 <input type="email" ref={emailRef} name="email" placeholder="Email"/>
-                                {errors.map((error, index)=><span key={index}>{error.title}</span>)}
+                                {errors.map((error, index)=><span className="error-msg" key={index}>{error.title}</span>)}
                             </div>
                             <div className="form-row">
-                                <button type="submit" className="btn btn-green" onClick={onclick}>
+                                <button type="submit"
+                                    className="btn btn-green"
+                                    onClick={submitForm}
+                                    disabled={isDisabled}
+                                >
                                     Submit
                                     <i className="icon-thin-right"/>
                                 </button>
                             </div>
                         </form>
-
-                    </div>}
-                </div>
+                    </div>
+                </div>}
             </div>
         </>
     )

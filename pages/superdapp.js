@@ -1,8 +1,34 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import {useRef, useState} from 'react'
 import BackButton from '../components/BackButton'
 
 function Superdapp() {
+    const [isAdded, setIsAdded] = useState(false)
+    const [isDisabled, setIsDisabled] = useState(false)
+    const [errors, setErrors] = useState([])
+    const emailRef = useRef(0)
+
+    const submitForm = async (e) => {
+        e.preventDefault();
+        setIsDisabled(true)
+        let req = await fetch('/api/newsletter', {
+            method: 'POST',
+            body: JSON.stringify({
+                    "email": emailRef.current.value
+                }
+            ),
+        })
+        let resp = await req.json();
+        if (req.ok) {
+            setIsAdded(true)
+        } else {
+            setErrors(resp?.errors)
+        }
+
+        setIsDisabled(false)
+    }
+
     return (
         <>
             <Head>
@@ -17,8 +43,9 @@ function Superdapp() {
                     </div>
                     <h1>SuperDapp Beta Release</h1>
                 </div>
-                <div className="row-col-2">
-                    <div className="col">
+                {isAdded && <h5 className="success-msg">Thank You for Subscribing</h5>}
+                {!isAdded && <div className="row-col-2">
+                     <div className="col">
                         <p>
                             Join the waiting list for our much anticipated
                             String SuperDapp.
@@ -34,18 +61,23 @@ function Superdapp() {
                     </div>
                     <div className="col">
                         <form action="#" method="POST">
-                            <div className="form-row">
-                                <input type="email" name="email" placeholder="Email"/>
+                            <div>
+                                <input type="email" ref={emailRef} name="email" placeholder="Email"/>
+                                {errors.map((error, index)=><span className="error-msg" key={index}>{error.title}</span>)}
                             </div>
                             <div className="form-row">
-                                <button type="submit" className="btn btn-green">
+                                <button type="submit"
+                                    className="btn btn-green"
+                                    onClick={submitForm}
+                                    disabled={isDisabled}
+                                >
                                     Submit
-                                    <i className="icon-thin-right" />
+                                    <i className="icon-thin-right"/>
                                 </button>
                             </div>
                         </form>
                     </div>
-                </div>
+                </div>}
             </div>
         </>
     )
