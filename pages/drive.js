@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import BackButton from '../components/BackButton'
 import driveItems from '../data/drive-items'
 import styles from '../styles/Menu.module.css'
@@ -23,7 +24,7 @@ function Drive() {
             { driveItems.length > 0 ?
                 <div className={`${styles.MainMenu} pt-0`}>
                     { driveItems.map((item, key) => 
-                        <div className={styles.MenuLink} key={key}>
+                        <Link href={item.path} className={styles.MenuLink} key={key} target="_blank">
                             <div className={styles.MenuLinkIcon}>
                                 <i className={item.icon} />
                             </div>
@@ -35,7 +36,7 @@ function Drive() {
                             </div>
                             <Image src={item.image} alt={item.title} loading="lazy" />
                             <i className="icon-next" />
-                        </div>
+                        </Link>
                     )}
                 </div>
                 : ''

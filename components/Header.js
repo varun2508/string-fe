@@ -14,8 +14,8 @@ const Header = () => {
                 <div className={styles.Content}>
                     <div className={styles.Note}>
                         <h5>{weekDay}, {month} {monthDay}</h5>
-                        <p>145 Active Nodes</p>
-                        <p>0.00045kWh</p>
+                        <p>11 Active Nodes</p>
+                        <p>1.32kWh</p>
                     </div>
                     <Link href="/home" className={styles.Home}>
                         <i className="icon-home"></i>

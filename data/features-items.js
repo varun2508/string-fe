@@ -13,7 +13,16 @@ const featuresItems = [
         icon: 'icon-documents',
         image: SmartContracts,
         path: '/features/smart-contracts',
-        text: `<p>Create and execute Smart Contracts with just a few clicks.</p>`
+        text: `<p>String offers highly scalable and modern asynchronous smart
+            contracts, making it easier for developers to build any web2
+            application in web3. With its intuitive platform, creating and
+            executing smart contracts has become a straightforward process,
+            allowing users to deploy public and private contracts with ease.
+            The ability to choose the level of security and visibility for each
+            contract provides versatility for a wide range of use cases across
+            various industries. String's asynchronous smart contracts provide a
+            flexible and efficient solution for developers looking to build
+            decentralized applications.</p>`
     },
     {
         id: 'nfts',
@@ -22,10 +31,25 @@ const featuresItems = [
         icon: 'icon-images',
         image: PublicPrivateNFTS,
         path: '/features/nfts',
-        text: `<p>Lets make JPEGs tangible. String brings the ability to easily
-            create and transact NFTs all while maintaining the privacy of all
-            data associated with each NFT. Enjoy creating static and dynamic
-            NFTs.</p>`
+        text: `<p>String offers support for both public and private NFTs,
+            allowing users to create, store, and transact unique digital
+            assets in a secure and decentralized manner. Each NFT can contain
+            multiple objects, such as images, videos, metadata, and more, and
+            these objects can be permissioned individually or as a whole to any
+            individual within the platform. This provides a high level of
+            flexibility and control over the data associated with each NFT.</p>
+            <p>The platform also provides programmability features that make
+            it easy to sell or subscribe to NFTs. Using primitives, users can
+            create custom transactions and smart contracts that allow for the
+            buying, selling, and trading of NFTs in a secure and efficient
+            manner. This makes it possible to build a wide range of NFT-based
+            applications, from marketplaces and galleries to gaming platforms
+            and more.</p>
+            <p>Overall, String brings the ability to easily create and transact
+            NFTs, all while maintaining the privacy of the data associated
+            with each NFT. Whether you're interested in creating static or
+            dynamic NFTs, String provides a secure, flexible, and programmable
+            platform for digital asset management.</p>`
     },
     {
         id: 'even-driven-programmability',
@@ -37,10 +61,10 @@ const featuresItems = [
         text: `<p>Event-Driven Programmability is a powerful feature found on
             String that allows developers to create smart contracts and
             decentralized applications (dApps) that can respond automatically
-            to specific events on-chain. </p><p>This functionality allows for
-            the creation of highly dynamic and responsive dApps that can
-            interact with other smart contracts and trigger actions based
-            on real-world events.</p>`
+            to specific events on-chain.</p>
+            <p>This functionality allows for the creation of highly dynamic
+            and responsive dApps that can interact with other smart contracts
+            and trigger actions based on real-world events.</p>`
     },
     {
         id: 'interoperability',
@@ -49,9 +73,16 @@ const featuresItems = [
         icon: 'icon-pocket',
         image: Interoperability,
         path: '/features/interoperability',
-        text: `<p>String allows seamless cross-blockchain transfer of both data
-            and tokens, providing you with unparalleled interoperability to a
-            diverse array of blockchains and wallets.</p>`
+        text: `<p>String provides interoperability that enables
+            cross-blockchain transfer of data and tokens, giving users
+            access to a diverse range of blockchains and wallets. The
+            platform supports Solidity + for easy app migration and a
+            Domain Specific Language (DSL) for communication with other
+            networks. This allows for seamless integration, communication,
+            and interaction between networks and platforms. The
+            interoperability features in String simplify decentralized app
+            building, migration, and interaction, providing users with
+            access to a wide array of blockchain and wallet options.</p>`
     },
     {
         id: 'dapps-dcloud',
