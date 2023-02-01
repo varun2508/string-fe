@@ -8,21 +8,21 @@ const socialItems = [
         subtitle: '@string3',
         icon: 'icon-twitter',
         image: Twitter,
-        path: '#',
+        path: 'https://twitter.com/string_net/',
     },
     {
         title: 'Instagram',
         subtitle: '@string3_network',
         icon: 'icon-instagram',
         image: Instagram,
-        path: '#',
+        path: 'https://www.instagram.com/string_net/',
     },
     {
         title: 'LinkedIn',
         subtitle: '@string3',
         icon: 'icon-linkedin',
         image: LinkedIn,
-        path: '#',
+        path: 'https://www.linkedin.com/company/string3/',
     },
 ]
 
