@@ -9,6 +9,7 @@ import Interoperability from '../public/interoperability.png'
 import DappsDcloud from '../public/dapps-dcloud.png'
 import DecentralizedEmail from '../public/decentralized-email.jpg'
 import CompetitorComparison from '../public/competitor-comparison.png'
+import Competitors from '../public/competitors.jpg'
 
 const featuresItems = [
     {
@@ -226,6 +227,16 @@ const featuresItems = [
             ullamco est sit aliqua dolor do amet sint. Velit officia consequat
             duis enim velit mollit. Exercitation veniam consequat sunt
             nostrud amet.</p>`
+    },
+    {
+        id: 'competitor-comparison',
+        title: 'Competitor Comparison',
+        subtitle: '',
+        icon: 'icon-chart-yellow',
+        image: CompetitorComparison,
+        bigImage: Competitors,
+        path: '/features/competitor-comparison',
+        text: ''
     },
 ]
 

@@ -373,6 +373,12 @@ i[class^='icon-'] {
     width: 53px;
 }
 
+.icon-chart-yellow {
+    background-image: url(../public/icons/chart-yellow.svg);
+    height: 46px;
+    width: 53px;
+}
+
 .icon-thin-right {
     background-image: url(../public/icons/arrow-thin-right.svg);
     height: 9px;
