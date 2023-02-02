@@ -218,15 +218,15 @@ const featuresItems = [
         icon: 'icon-decentralized-email',
         image: DecentralizedEmail,
         path: '/features/decentralized-email',
-        text: `<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor
-            do amet sint. Velit officia consequat duis enim velit mollit.
-            Exercitation veniam consequat sunt nostrud amet. Amet minim mollit
-            non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-            officia consequat duis enim velit mollit. Exercitation veniam
-            consequat sunt nostrud amet.</p><p>Amet minim mollit non deserunt
-            ullamco est sit aliqua dolor do amet sint. Velit officia consequat
-            duis enim velit mollit. Exercitation veniam consequat sunt
-            nostrud amet.</p>`
+        text: `<p>String offers a decentralized email service that provides
+            users with secure, private, and reliable email communications.
+            Unlike traditional centralized email providers, String's decentralized
+            email service prevents deletion by centralized providers and provides
+            enhanced privacy and security through encryption. Users have full
+            control over their data, ensuring that emails are always accessible,
+            even if the central provider becomes unavailable. The decentralized
+            email service on String is a valuable alternative to centralized
+            email providers.</p>`
     },
     {
         id: 'competitor-comparison',
