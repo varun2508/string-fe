@@ -28,14 +28,16 @@ function FeaturesInner() {
                     </div>
                     <h1>{page.title}</h1>
                 </div>
-                <div className="page-intro">
-                    <div
-                        dangerouslySetInnerHTML={{ __html: page.text }}
-                    />
-                    <div className="page-banner">
-                        <Image src={page.image} alt={page.title} loading="lazy" />
+                {page.bigImage ? <Image src={page.bigImage} alt={page.title} loading="lazy" />
+                    : <div className="page-intro">
+                        <div
+                            dangerouslySetInnerHTML={{ __html: page.text }}
+                        />
+                        <div className="page-banner">
+                            <Image src={page.image} alt={page.title} loading="lazy" />
+                        </div>
                     </div>
-                </div>
+                }
             </div>
         </>
     )
