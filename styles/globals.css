@@ -234,6 +234,12 @@ i[class^='icon-'] {
     width: 45px
 }
 
+.icon-profile-green {
+    background-image: url(../public/icons/profile-green.svg);
+    height: 50px;
+    width: 45px
+}
+
 .icon-tech {
     background-image: url(../public/icons/tech.svg);
     height: 50px;
@@ -277,6 +283,12 @@ i[class^='icon-'] {
     width: 42px;
 }
 
+.icon-lock-yellow {
+    background-image: url(../public/icons/lock-yellow.svg);
+    height: 50px;
+    width: 42px;
+}
+
 .icon-network {
     background-image: url(../public/icons/network.svg);
     height: 50px;
@@ -289,10 +301,28 @@ i[class^='icon-'] {
     width: 50px;
 }
 
+.icon-map-pink {
+    background-image: url(../public/icons/map-pink.svg);
+    height: 40px;
+    width: 50px;
+}
+
 .icon-search {
     background-image: url(../public/icons/search.svg);
     height: 50px;
     width: 50px;
+}
+
+.icon-solidity-compatibility {
+    background-image: url(../public/icons/solidity-compatibility.svg);
+    height: 50px;
+    width: 46px;
+}
+
+.icon-decentralized-email {
+    background-image: url(../public/icons/decentralized-email.svg);
+    height: 50px;
+    width: 47px;
 }
 
 .icon-chat {
@@ -303,6 +333,12 @@ i[class^='icon-'] {
 
 .icon-documents {
     background-image: url(../public/icons/documents.svg);
+    height: 50px;
+    width: 46px;
+}
+
+.icon-documents-green {
+    background-image: url(../public/icons/documents-green.svg);
     height: 50px;
     width: 46px;
 }
@@ -478,6 +514,12 @@ i[class^='icon-'] {
     background-image: url(../public/icons/home.svg);
     height: 17px;
     width: 20px;
+}
+
+.icon-decentralized-platform {
+    background-image: url(../public/icons/decentralized-platform.svg);
+    width: 43px;
+    height: 47px;
 }
 
 /* Buttons Styles */
