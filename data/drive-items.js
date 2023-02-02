@@ -15,14 +15,14 @@ const driveItems = [
         subtitle: 'Data layers, Network layers, DSL & more',
         icon: 'icon-tech',
         image: Deck,
-        path: 'https://d1fdloi71mui9q.cloudfront.net/uE0PH822RaPLmxN0XG6A_String-Network-Paper.pdf',
+        path: 'https://d1fdloi71mui9q.cloudfront.net/tyt7DM4RSq4SQJWrFNb0_StringDeck%40V11.pdf',
     },
     {
         title: 'Network Paper',
         subtitle: 'In-dept analysis of our network',
         icon: 'icon-features',
         image: NetworkPaper,
-        path: 'https://d1fdloi71mui9q.cloudfront.net/tyt7DM4RSq4SQJWrFNb0_StringDeck%40V11.pdf',
+        path: 'https://d1fdloi71mui9q.cloudfront.net/uE0PH822RaPLmxN0XG6A_String-Network-Paper.pdf',
     },
 ]
 
