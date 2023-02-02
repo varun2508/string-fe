@@ -3,6 +3,7 @@ import ZeroTrustNetwork from '../public/zero-trust-network.png'
 import HyperSpaceDatabase from '../public/hyperspace-database.png'
 import Consensus from '../public/consensus.png'
 import SpecificLanguage from '../public/specific-language.png'
+import NativeAccountAbstraction from '../public/native-account-abstraction.jpg'
 
 const techItems = [
     {
@@ -94,6 +95,27 @@ const techItems = [
             intuitive way. The main benefit of Strings DSL is its ease of use,
             as it utilizes natural language commands in English to control
             the network. </p>`,
+    },
+    {
+        id: 'native-account-abstraction',
+        title: 'Native Account Abstraction',
+        subtitle: '',
+        icon: 'icon-profile-green',
+        image: NativeAccountAbstraction,
+        path: '/tech/native-account-abstraction',
+        text: `<p>Native Account Abstraction in String allows for secure and
+            convenient management of private keys through a private key
+            abstraction layer. The system separates the underlying private
+            key from its associated public key, adding an extra layer of
+            security as the private key is never directly exposed. Users
+            can interact with their accounts using their public keys and
+            the system takes care of storage and management of private keys,
+            eliminating the risk of losing access due to loss or theft. The
+            feature also enables multisignature accounts, requiring multiple
+            signatures before transactions can be executed, providing added
+            security or facilitating collaboration between multiple users.
+            Native Account Abstraction enhances both security and usability
+            for String users.</p>`,
     },
 ]
 

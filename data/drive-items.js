@@ -22,7 +22,7 @@ const driveItems = [
         subtitle: 'In-dept analysis of our network',
         icon: 'icon-features',
         image: NetworkPaper,
-        path: '',
+        path: 'https://d1fdloi71mui9q.cloudfront.net/tyt7DM4RSq4SQJWrFNb0_StringDeck%40V11.pdf',
     },
 ]
 
