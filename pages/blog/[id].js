@@ -19,12 +19,12 @@ function BlogInner({post}) {
                 </div>
                 <div>
                     <div className="page-banner">
-                        <Image src={post.data.thumbnail}
+                        {post.data.thumbnail && <Image src={post.data.thumbnail}
                             alt={post.data.title}
                             loading="lazy"
                             height="355"
                             width="440"
-                        />
+                        />}
                         <br/>
                         <br/>
                     </div>

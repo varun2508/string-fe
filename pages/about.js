@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import BackButton from '../components/BackButton'
 import AboutImage from '../public/about-big.png'
+import Default from '../public/default-avatar.png'
 import styles from '../styles/About.module.css'
 
 function About({teamMembers}) {
@@ -52,7 +53,7 @@ function About({teamMembers}) {
                                 <div className={styles.TeamMember} key={key}>
                                     <div className={styles.Card}>
                                         <div className={styles.CardFront}>
-                                            <Image src={member.photo}
+                                            <Image src={member.photo ?? Default}
                                                    alt={member.name}
                                                    width='100'
                                                    height='100'
