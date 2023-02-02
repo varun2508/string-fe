@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import BackButton from '../components/BackButton'
 import AboutImage from '../public/about-big.png'
+import Default from '../public/default-avatar.png'
 import Link from 'next/link'
 import styles from '../styles/Blog.module.css'
 
@@ -28,7 +29,7 @@ function Blog({posts}) {
                                     <Link href={`/blog/${ post.id}`}
                                         className={styles.BlogCard}
                                     >
-                                        <Image src={post.thumbnail}
+                                        <Image src={post.thumbnail ?? Default}
                                             alt={post.title}
                                             width="285"
                                             height="280"
