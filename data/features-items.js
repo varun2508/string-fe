@@ -15,7 +15,7 @@ const featuresItems = [
     {
         id: 'decentralized-platform',
         title: 'Decentralized Platform',
-        subtitle: '',
+        subtitle: 'Build Real World dApps with our Decentralized Platform',
         icon: 'icon-decentralized-platform ',
         image: DecentralizedPlatform,
         path: '/features/decentralized-platform',
@@ -62,7 +62,7 @@ const featuresItems = [
     {
         id: 'decentralized-sso',
         title: 'Decentralized SSO',
-        subtitle: '',
+        subtitle: 'Use String\'s decentralized single-sign on across web2 and web3',
         icon: 'icon-lock-yellow',
         image: DecentralizedSSO,
         path: '/features/decentralized-sso',
@@ -88,7 +88,7 @@ const featuresItems = [
     {
         id: 'multi-dimensional-transactions',
         title: 'Multi-Dimensional Transactions',
-        subtitle: '',
+        subtitle: 'Go Beyond Financial Transactions with String\'s Multi-Dimensional Transactions',
         icon: 'icon-map-pink',
         image: MultiDimensional,
         path: '/features/multi-dimensional-transactions',
@@ -112,7 +112,7 @@ const featuresItems = [
     {
         id: 'solidity-compatibility',
         title: 'Solidity Compatibility',
-        subtitle: '',
+        subtitle: 'Leverage Solidity Integration on String for Effortless dApp Development',
         icon: 'icon-solidity-compatibility ',
         image: SolidityCompatibility,
         path: '/features/solidity-compatibility',
@@ -214,7 +214,7 @@ const featuresItems = [
     {
         id: 'decentralized-email',
         title: 'Decentralized Email',
-        subtitle: '',
+        subtitle: 'Secure Decentralized Email on String',
         icon: 'icon-decentralized-email',
         image: DecentralizedEmail,
         path: '/features/decentralized-email',
@@ -231,7 +231,7 @@ const featuresItems = [
     {
         id: 'competitor-comparison',
         title: 'Competitor Comparison',
-        subtitle: '',
+        subtitle: 'Comparing String to Other Leading Blockchains',
         icon: 'icon-chart-yellow',
         image: CompetitorComparison,
         bigImage: Competitors,

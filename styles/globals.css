@@ -403,6 +403,12 @@ i[class^='icon-'] {
     width: 50px;
 }
 
+.icon-youtube {
+    background-image: url(../public/icons/social-youtube.svg);
+    height: 48px;
+    width: 50px;
+}
+
 /* Footer Menu Icons */
 .icon-phone:after,
 .icon-phone:before {
