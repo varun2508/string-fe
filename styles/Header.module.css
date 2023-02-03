@@ -9,10 +9,9 @@
     border-radius: 100%;
     backdrop-filter: blur(50px);
     display: flex;
-    height: 44px;
     justify-content: center;
-    height: 44px;
-    width: 44px;
+    height: 50px;
+    width: 50px;
     -webkit-box-shadow: 0px 0px 0px 1px rgba(255,255,255,0.2);
     -moz-box-shadow: 0px 0px 0px 1px rgba(255,255,255,0.2);
     box-shadow: 0px 0px 0px 1px rgba(255,255,255,0.2);
@@ -41,10 +40,6 @@
 }
 
 @media screen and (min-width: 768px) {
-    .Home {
-        display: none;
-    }
-
     .Note {
         padding: 15px 18px;
         min-width: 200px;

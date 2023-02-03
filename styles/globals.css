@@ -523,9 +523,9 @@ i[class^='icon-'] {
 }
 
 .icon-home {
-    background-image: url(../public/icons/home.svg);
-    height: 17px;
-    width: 20px;
+    background-image: url(../public/icons/string-icon.png);
+    height: 30px;
+    width: 30px;
 }
 
 .icon-decentralized-platform {
