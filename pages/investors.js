@@ -19,9 +19,9 @@ function Investors() {
                         <BackButton />
                         <div className="page-heading">
                             <div className="page-icon">
-                                <i className="icon-timeline" />
+                                <i className="icon-investors" />
                             </div>
-                            <h1>Timeline</h1>
+                            <h1>Investors</h1>
                         </div>
                     </div>
                     { investorsItems.map((item, key) => 
