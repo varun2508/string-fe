@@ -99,7 +99,7 @@ const techItems = [
     {
         id: 'native-account-abstraction',
         title: 'Native Account Abstraction',
-        subtitle: '',
+        subtitle: 'Easy Key Management with Native Account Abstraction',
         icon: 'icon-profile-green',
         image: NativeAccountAbstraction,
         path: '/tech/native-account-abstraction',

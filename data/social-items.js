@@ -1,6 +1,7 @@
 import Twitter from '../public/twitter.png'
 import Instagram from '../public/instagram.png'
 import LinkedIn from '../public/linkedin.png'
+import Youtube from '../public/youtube.jpg'
 
 const socialItems = [
     {
@@ -23,6 +24,13 @@ const socialItems = [
         icon: 'icon-linkedin',
         image: LinkedIn,
         path: 'https://www.linkedin.com/company/string3/',
+    },
+    {
+        title: 'Youtube',
+        subtitle: '@string3',
+        icon: 'icon-youtube',
+        image: Youtube,
+        path: 'https://www.youtube.com/@String3/',
     },
 ]
 
