@@ -1,5 +1,5 @@
 .MainMenu {
-    padding: 6px 20px;
+    padding: 0 20px 6px;
 }
 
 .MenuLink {
@@ -52,7 +52,7 @@
 
 @media screen and (min-width: 768px) {
     .MainMenu {
-        padding: 18px 0;
+        padding: 0 0 18px 0;
     }
 
     .MenuLink {
