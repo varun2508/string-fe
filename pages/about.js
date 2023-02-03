@@ -55,8 +55,8 @@ function About({teamMembers}) {
                                         <div className={styles.CardFront}>
                                             <Image src={member.photo ?? Default}
                                                    alt={member.name}
-                                                   width='100'
-                                                   height='100'
+                                                   width='280'
+                                                   height='285'
                                                    loading="lazy"
                                             />
                                         </div>
