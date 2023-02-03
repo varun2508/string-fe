@@ -33,7 +33,7 @@ function TechInner() {
                         dangerouslySetInnerHTML={{ __html: page.text }}
                     />
                     <div className="page-banner">
-                        <Image src={page.image} alt={page.title} loading="lazy" />
+                        <Image src={page.image} alt={page.title} loading="lazy" width="440" />
                     </div>
                 </div>
             </div>
