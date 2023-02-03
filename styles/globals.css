@@ -191,7 +191,7 @@ textarea {
 
 img {
     max-width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .error-msg {
@@ -672,6 +672,7 @@ button:hover {
     box-shadow: 8px 24px 64px 8px rgba(179, 167, 138, 0.2);
     border-radius: var(--border-radius-xs);
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     margin-right: 12px;
     height: 40px;
