@@ -15,7 +15,15 @@ function Investors() {
 
             { investorsItems.length > 0 ?
                 <div className={styles.MainMenu}>
-                    <BackButton />
+                    <div className="page-inner pb-0">
+                        <BackButton />
+                        <div className="page-heading">
+                            <div className="page-icon">
+                                <i className="icon-timeline" />
+                            </div>
+                            <h1>Timeline</h1>
+                        </div>
+                    </div>
                     { investorsItems.map((item, key) => 
                         <Link href={item.path} className={styles.MenuLink} key={key}>
                             <span className={styles.MenuLinkIcon}>

@@ -14,7 +14,15 @@ function Tech() {
 
             { techItems.length > 0 ?
                 <div className={styles.MainMenu}>
-                    <BackButton />
+                    <div className="page-inner pb-0">
+                        <BackButton />
+                        <div className="page-heading">
+                            <div className="page-icon">
+                                <i className="icon-tech" />
+                            </div>
+                            <h1>Tech</h1>
+                        </div>
+                    </div>
                     { techItems.map((item, key) => 
                         <Link href={item.path} className={styles.MenuLink} key={key}>
                             <span className={styles.MenuLinkIcon}>

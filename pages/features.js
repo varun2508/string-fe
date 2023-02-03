@@ -14,7 +14,15 @@ function Features() {
 
             { featuresItems.length > 0 ?
                 <div className={styles.MainMenu}>
-                    <BackButton />
+                    <div className="page-inner pb-0">
+                        <BackButton />
+                        <div className="page-heading">
+                            <div className="page-icon">
+                                <i className="icon-features" />
+                            </div>
+                            <h1>Features</h1>
+                        </div>
+                    </div>
                     { featuresItems.map((item, key) => 
                         <Link href={item.path} className={styles.MenuLink} key={key}>
                             <span className={styles.MenuLinkIcon}>
