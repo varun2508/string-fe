@@ -12,6 +12,7 @@ import bg8 from '../public/bg/bg-8.jpg'
 const DynamicBackground = () => {
     let currentBg = null
     const [newBg, setNewBg] = useState('')
+
     const bgs = [
         bg1,
         bg2,
@@ -24,14 +25,14 @@ const DynamicBackground = () => {
     ]
 
     useEffect(() => {
-        if (window.sessionStorage.getItem("currentBg")) {
-            currentBg = window.sessionStorage.getItem("currentBg")
+        if (sessionStorage.getItem("currentBg")) {
+            currentBg = sessionStorage.getItem("currentBg")
             setNewBg(bgs[currentBg])
         } else {
             const filteredBgs = bgs.filter(e => e !== currentBg)
             const randomItem = Math.floor(Math.random() * bgs.length)
             setNewBg(filteredBgs[randomItem])
-            window.sessionStorage.setItem('currentBg', randomItem)
+            sessionStorage.setItem('currentBg', randomItem)
         }
     },[])
 
