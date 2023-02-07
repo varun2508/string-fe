@@ -4,6 +4,7 @@ import DynamicBackground from "./DynamicBackground"
 import Transition from "./Transition"
 import Header from "./Header"
 import Footer from "./Footer"
+import favicon from '../public/favicon.ico';
 
 const MainLayout = ({ children }) => {
     const pathname = usePathname()
@@ -20,7 +21,9 @@ const MainLayout = ({ children }) => {
     return (
         <>
             <DynamicBackground />
-            <Header />
+            <Header>
+                <link rel="icon" href={favicon.src} type="image/x-icon" />
+            </Header>
             <Transition>
                 <main className="main">
                     <div className="container">
