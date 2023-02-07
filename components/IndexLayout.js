@@ -1,11 +1,14 @@
 import Header from "./Header"
 import DynamicBackground from "./DynamicBackground"
+import favicon from '../public/favicon.ico';
 
 const IndexLayout = ({ children }) => {
     return (
         <>
             <DynamicBackground />
-            <Header />
+            <Header>
+                <link rel="icon" href={favicon.src} type="image/x-icon" />
+            </Header>
             <main>
                 <div className="container">
                     {children}
