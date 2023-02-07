@@ -10,21 +10,12 @@ import bg7 from '../public/bg/bg-7.jpg'
 import bg8 from '../public/bg/bg-8.jpg'
 
 const DynamicBackground = () => {
-    let currentBg = null
     const [newBg, setNewBg] = useState('')
 
-    const bgs = [
-        bg1,
-        bg2,
-        bg3,
-        bg4,
-        bg5,
-        bg6,
-        bg7,
-        bg8
-    ]
-
     useEffect(() => {
+        let currentBg = null
+        const bgs = [ bg1, bg2, bg3, bg4, bg5, bg6, bg7, bg8 ]
+
         if (sessionStorage.getItem("currentBg")) {
             currentBg = sessionStorage.getItem("currentBg")
             setNewBg(bgs[currentBg])
