@@ -689,6 +689,13 @@ button:hover {
     width: 100%;
 }
 
+.page-404 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
 @media screen and (min-width: 992px) {
     .page-intro {
         gap: 60px;
