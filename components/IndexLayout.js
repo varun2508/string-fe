@@ -7,7 +7,7 @@ const IndexLayout = ({ children }) => {
         <>
             <DynamicBackground />
             <Header>
-                <link rel="icon" href={favicon.src} type="image/x-icon" />
+                <link rel="icon" href={favicon} type="image/x-icon" />
             </Header>
             <main>
                 <div className="container">
