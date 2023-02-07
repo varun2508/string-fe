@@ -6,17 +6,17 @@ import Youtube from '../public/youtube.jpg'
 const socialItems = [
     {
         title: 'Twitter',
-        subtitle: '@string3',
+        subtitle: '@string_net',
         icon: 'icon-twitter',
         image: Twitter,
-        path: 'https://twitter.com/string_net/',
+        path: 'https://twitter.com/String_Net/',
     },
     {
         title: 'Instagram',
-        subtitle: '@string3_network',
+        subtitle: '@string_network',
         icon: 'icon-instagram',
         image: Instagram,
-        path: 'https://www.instagram.com/string_net/',
+        path: 'https://www.instagram.com/string_network/',
     },
     {
         title: 'LinkedIn',
@@ -27,7 +27,7 @@ const socialItems = [
     },
     {
         title: 'Youtube',
-        subtitle: '@string3',
+        subtitle: '@string_net',
         icon: 'icon-youtube',
         image: Youtube,
         path: 'https://www.youtube.com/@String3/',
