@@ -2,7 +2,7 @@ import AboutImage from '../public/about-menu.png'
 import TechImage from '../public/tech-menu.png'
 import FeatureImage from '../public/feature-menu.png'
 import TimelineImage from '../public/timeline-menu.png'
-import InvestorsImage from '../public/investors-menu.png'
+import InvestorsImage from '../public/investors-menu.jpg'
 import BlogImage from '../public/blog-menu.png'
 
 const menuItems = [

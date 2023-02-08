@@ -337,10 +337,22 @@ i[class^='icon-'] {
     width: 46px;
 }
 
-.icon-documents-green {
-    background-image: url(../public/icons/documents-green.svg);
+.icon-deck {
+    background-image: url(../public/icons/deck.svg);
     height: 50px;
     width: 46px;
+}
+
+.icon-documents-green {
+    background-image: url(../public/icons/documents-green.svg);
+    height: 42px;
+    width: 48px;
+}
+
+.icon-network-paper {
+    background-image: url(../public/icons/network-paper.svg);
+    height: 50px;
+    width: 44px;
 }
 
 .icon-images {
