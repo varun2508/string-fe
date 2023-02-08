@@ -1,23 +1,14 @@
 <svg width="52" height="46" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_b_408_11016)">
-<rect width="42.517" height="39.6825" rx="8" fill="#1DA1F2" fill-opacity="0.2"/>
-<rect x="0.2" y="0.2" width="42.117" height="39.2825" rx="7.8" stroke="url(#paint0_linear_408_11016)" stroke-width="0.4"/>
-</g>
-<g clip-path="url(#clip0_408_11016)">
+<rect x="0.2" y="0.2" width="42.117" height="39.2825" rx="7.8" fill="#1DA1F2" fill-opacity="0.2" stroke="url(#paint0_linear_548_13193)" stroke-width="0.4"/>
+<g clip-path="url(#clip0_548_13193)">
 <path d="M23.0012 45.9828C39.1737 45.9828 48.0194 32.584 48.0194 20.9646C48.0194 20.584 48.0194 20.2051 47.9937 19.828C49.7146 18.5833 51.2 17.0421 52.3806 15.2766C50.7759 15.988 49.0735 16.4543 47.3303 16.66C49.166 15.5612 50.5398 13.8328 51.196 11.7966C49.47 12.8209 47.5817 13.5427 45.6126 13.9308C44.2868 12.5212 42.5335 11.5877 40.6238 11.2749C38.7141 10.9621 36.7545 11.2875 35.0484 12.2006C33.3422 13.1137 31.9845 14.5636 31.1855 16.3261C30.3864 18.0886 30.1905 20.0652 30.628 21.9503C27.1322 21.7749 23.7123 20.8664 20.5903 19.2837C17.4684 17.701 14.7141 15.4795 12.5063 12.7634C11.3819 14.6991 11.0375 16.9906 11.5433 19.1713C12.049 21.352 13.3669 23.258 15.2286 24.5011C13.8292 24.4601 12.4603 24.0826 11.2377 23.4006V23.512C11.2383 25.5421 11.941 27.5095 13.2268 29.0805C14.5125 30.6515 16.3021 31.7294 18.292 32.1314C16.9975 32.4845 15.6393 32.5361 14.3217 32.2823C14.8838 34.0293 15.9778 35.557 17.4506 36.6518C18.9235 37.7466 20.7017 38.3538 22.5366 38.3886C20.7135 39.8215 18.6258 40.881 16.3929 41.5064C14.1599 42.1318 11.8256 42.3108 9.52344 42.0331C13.5446 44.6135 18.2233 45.9823 23.0012 45.976" fill="#1DA1F2"/>
 </g>
 <defs>
-<filter id="filter0_b_408_11016" x="-13.0567" y="-13.0567" width="68.631" height="65.796" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feGaussianBlur in="BackgroundImageFix" stdDeviation="6.52837"/>
-<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_408_11016"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_408_11016" result="shape"/>
-</filter>
-<linearGradient id="paint0_linear_408_11016" x1="-3.03693" y1="3.6075" x2="55.2284" y2="35.8403" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_548_13193" x1="-3.03693" y1="3.6075" x2="55.2284" y2="35.8403" gradientUnits="userSpaceOnUse">
 <stop stop-color="white"/>
 <stop offset="1" stop-color="white" stop-opacity="0"/>
 </linearGradient>
-<clipPath id="clip0_408_11016">
+<clipPath id="clip0_548_13193">
 <rect width="42" height="39" fill="white" transform="translate(10 7)"/>
 </clipPath>
 </defs>
