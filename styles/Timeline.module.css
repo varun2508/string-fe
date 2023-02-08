@@ -9,6 +9,7 @@
 }
 
 .TimelineFeedItem {
+    align-items: baseline;
     display: flex;
     padding: 20px 0;
     position: relative;
