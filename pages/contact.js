@@ -13,7 +13,7 @@ function Contact() {
         setIsDisabled(true)
         const data = new FormData(event.target)
 
-        let resp = await fetch("https://ftnow.activehosted.com/proc.php", {
+        let resp = await fetch(`${process.env.ContactApiUrl}`, {
             method: 'POST',
             body: data,
             mode: 'no-cors',
@@ -49,7 +49,7 @@ function Contact() {
                             <input type="hidden" name="m" value="0"/>
                             <input type="hidden" name="act" value="sub"/>
                             <input type="hidden" name="v" value="2"/>
-                            <input type="hidden" name="or" value="e0ec3c0f5fbc5b9cbc6c2faf598af5bc"/>
+                            <input type="hidden" name="or" value={process.env.ContactFormID} />
                             <div className="form-row">
                                 <input type="text" name="fullname" placeholder="Name" required/>
                             </div>
