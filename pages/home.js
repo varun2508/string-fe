@@ -19,7 +19,7 @@ function Home() {
                                 <i className={item.icon} />
                             </span>
                             <span className={styles.MenuLinkText}>
-                                <h1>{item.title}</h1>
+                                <h3>{item.title}</h3>
                                 <p>
                                     <strong>{item.subtitle}</strong>
                                     <span>{item.description}</span>

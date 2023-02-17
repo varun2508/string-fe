@@ -1,5 +1,5 @@
 .TeamItems {
-    column-gap: 57px;
+    column-gap: 22px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -10,12 +10,12 @@
     position: relative;
     perspective: 1000px;
     transform: translate3d(0,0,0);
-    max-width: 285px;
+    max-width: 272px;
     width: 100%;
 }
 
 .TeamMember hr {
-    margin: 20px 0;
+    margin: 12px 0;
 }
 
 .TeamMember h5 {
@@ -63,8 +63,8 @@
 .CardBack {
     border-radius: var(--border-radius-sm);
     overflow: hidden;
-    max-width: 285px;
-    height: 280px;
+    max-width: 272px;
+    height: 265px;
     width: 100%;
 }
 
@@ -94,7 +94,7 @@
 
 @media screen and (min-width: 768px) {
     .TeamMember {
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 }
 

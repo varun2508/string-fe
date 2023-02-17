@@ -6,7 +6,7 @@ export default function Document() {
             <Head>
                 <meta name="description" content="" />
                 <meta name="keywords" content="" />
-                <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
                 <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;600&family=Quattrocento+Sans:wght@400;700&display=swap" rel="stylesheet" />

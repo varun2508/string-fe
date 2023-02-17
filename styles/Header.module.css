@@ -46,8 +46,8 @@
     }
 
     .Note p {
-        font-size: var(--font-size-18);
-        line-height: var(--line-height-23);
+        font-size: var(--font-size-14);
+        line-height: var(--line-height-16);
     }
 
     .Note h5,

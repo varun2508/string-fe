@@ -5,7 +5,7 @@
     --color-blue: #6D8FFF;
     --color-green: #92D5BD;
 
-    --max-width: 1170px;
+    --max-width: 1000px;
     --container-padding: 0 15px;
     --font-mulish: 'Mulish', sans-serif;
     --font-quattrocento: 'Quattrocento Sans', sans-serif;
@@ -34,6 +34,7 @@
     --font-size-60: 60px;
     --font-size-50: 50px;
     --font-size-44: 44px;
+    --font-size-40: 40px;
     --font-size-32: 32px;
     --font-size-28: 28px;
     --font-size-26: 26px;
@@ -53,6 +54,8 @@
     --line-height-66: 66px;
     --line-height-55: 55px;
     --line-height-50: 50px;
+    --line-height-45: 45px;
+    --line-height-40: 40px;
     --line-height-31: 31px;
     --line-height-29: 29px;
     --line-height-25: 25px;
@@ -99,6 +102,11 @@ a {
     text-decoration: none;
 }
 
+b {
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-18);
+}
+
 p {
     font-size: var(--font-size-14);
     line-height: var(--line-height-18);
@@ -125,10 +133,10 @@ h3 {
 }
 
 h4 {
-    font-size: var(--font-size-16);
-    font-weight: var(--font-weight-700);
-    line-height: var(--line-height-20);
-    margin-bottom: 16px;
+    font-size: var(--font-size-20);
+    font-weight: var(--font-weight-400);
+    line-height: var(--line-height-25);
+    margin-bottom: 5px;
 }
 
 h5 {
@@ -139,7 +147,7 @@ h5 {
 }
 
 header {
-    padding: 24px 0;
+    padding: 20px 0;
     position: fixed;
     top: 0;
     width: calc(100% - 30px);
@@ -148,6 +156,10 @@ header {
 
 body .pt-0 {
     padding-top: 0;
+}
+
+body .pt-10 {
+    padding-top: 10px;
 }
 
 body .pb-0 {
@@ -619,7 +631,7 @@ button:hover {
     align-items: center;
     top: 110px;
     position: fixed;
-    max-width: 1170px;
+    max-width: var(--max-width);
     left: 50%;
     min-height: 300px;
     transform: translateX(-50%);
@@ -710,7 +722,7 @@ button:hover {
 
 @media screen and (min-width: 992px) {
     .page-intro {
-        gap: 60px;
+        gap: 40px;
     }
 
     .page-intro > div {
@@ -726,43 +738,34 @@ button:hover {
 }
 
 @media screen and (min-width: 768px) {
-    p {
-        font-size: var(--font-size-16);
-        line-height: var(--line-height-23);
-    }
-
     h1 {
-        font-size: var(--font-size-60);
-        line-height: var(--line-height-66);
+        font-size: var(--font-size-40);
+        line-height: var(--line-height-50);
     }
 
     h2 {
-        font-size: var(--font-size-50);
+        font-size: var(--font-size-40);
         font-weight: var(--font-weight-400);
-        line-height: var(--line-height-55);
+        line-height: var(--line-height-45);
     }
 
     h3 {
-        font-size: var(--font-size-44);
+        font-size: var(--font-size-40);
         font-weight: var(--font-weight-400);
-        line-height: var(--line-height-50);
-        margin-bottom: 24px;
+        line-height: var(--line-height-45);
+        margin-bottom: 10px;
     }
 
     h4 {
         font-size: var(--font-size-32);
-        font-weight: var(--font-weight-700);
-        line-height: var(--line-height-35);
-        margin-bottom: 16px;
+        font-weight: var(--font-weight-400);
+        line-height: var(--line-height-40);
+        margin-bottom: 5px;
     }
 
     h5 {
-        font-size: var(--font-size-28);
-        line-height: var(--line-height-31)
-    }
-
-    header {
-        padding: 40px 0 27px;
+        font-size: var(--font-size-18);
+        line-height: var(--line-height-20)
     }
 
     button[type="submit"] {
@@ -775,8 +778,8 @@ button:hover {
     }
 
     .icon-next {
-        height: 45px;
-        width: 62px;
+        height: 32px;
+        width: 50px;
     }
 
     .icon-back {
@@ -786,8 +789,8 @@ button:hover {
 
     .main {
         border-radius: var(--border-radius-lg);
-        bottom: 140px;
-        top: 186px;
+        bottom: 125px;
+        top: 138px;
     }
 
     .row-col-2 {
@@ -800,11 +803,7 @@ button:hover {
     }
 
     .page-inner {
-        padding: 35px 100px 60px;
-    }
-    
-    .page-heading {
-        margin-bottom: 35px;
+        padding: 20px 70px 20px;
     }
 
     .page-icon {
