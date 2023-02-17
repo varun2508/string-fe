@@ -2,7 +2,7 @@
 
 .BlogItems {
     display: grid;
-    grid-column-gap: 58px;
+    grid-column-gap: 22px;
     grid-template-columns: 1fr;
 }
 
@@ -10,20 +10,20 @@
     position: relative;
     perspective: 1000px;
     transform: translate3d(0,0,0);
-    max-width: 285px;
+    max-width: 272px;
     margin-bottom: 25px;
     width: 100%;
 }
 
 .BlogItem hr {
-    margin: 20px 0;
+    margin: 12px 0;
 }
 
 .BlogItem img {
     border-radius: var(--border-radius-sm);
     object-fit: cover;
-    height: 280px;
-    width: 285px;
+    max-width: 272px;
+    height: 265px;
     transition: all .3s ease-in-out;
 }
 
@@ -75,7 +75,7 @@
     }
 
     .BlogItem {
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 }
 

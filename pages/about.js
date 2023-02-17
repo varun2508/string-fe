@@ -42,7 +42,7 @@ function About({teamMembers}) {
                     </div>
                 </div>
                 <div className={styles.Team}>
-                    <h3>Our Team</h3>
+                    <h4>Our Team</h4>
                     <p>We are the baddest team of nerds, geeks, and suits with a
                         perfect blend of intelligence, innovation and execution.
                     </p>

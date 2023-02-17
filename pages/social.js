@@ -12,7 +12,7 @@ function Social() {
                 <title>String | Social Media</title>
             </Head>
 
-            <div className="page-inner pb-0">
+            <div className="page-inner pb-0 pt-10">
                 <BackButton />
                 <div className="page-heading">
                     <div className="page-icon">
@@ -29,7 +29,7 @@ function Social() {
                                 <i className={item.icon} />
                             </div>
                             <div className={styles.MenuLinkText}>
-                                <h3>{item.title}</h3>
+                                <h4>{item.title}</h4>
                                 <div>
                                     <b>{item.subtitle}</b>
                                 </div>
