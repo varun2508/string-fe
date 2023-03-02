@@ -720,6 +720,10 @@ button:hover {
     height: 100%;
 }
 
+.attachment__caption {
+    display: none;
+}
+
 @media screen and (min-width: 992px) {
     .page-intro {
         gap: 40px;
