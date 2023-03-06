@@ -36,7 +36,6 @@
 .LogoIntro {
     color: transparent;
     margin-right: auto;
-    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 991px) {
@@ -47,9 +46,9 @@
 
 @media screen and (min-width: 992px) {
     .MainBox {
-        max-width: 770px;
+        max-width: 700px;
         top: 200px;
-        padding: 60px 0 90px;
+        padding: 50px 0;
     }
 
     .MainBox a {
