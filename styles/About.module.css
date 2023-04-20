@@ -81,8 +81,8 @@
 .CardBack {
     background-color: #F0FBEC;
     padding: 16px;
+    overflow-y: auto;
 }
-
 
 .TeamMember:hover .CardFront {
     transform: rotateY(180deg);
