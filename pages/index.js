@@ -15,7 +15,7 @@ export default function Index() {
                     className={styles.LogoIntro}
                     alt="String"
                     loading="lazy"
-                    width="270"
+                    width="250"
                     height="118"
                 />
                 <h1>Welcome to a better, safer internet.</h1>

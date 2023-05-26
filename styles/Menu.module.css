@@ -52,16 +52,16 @@
 
 @media screen and (min-width: 768px) {
     .MainMenu {
-        padding: 0 0 18px 0;
+        padding: 10px 0 0 0;
     }
 
     .MenuLink {
-        padding: 22px 40px;
+        padding: 10px 40px;
     }
 
     .MenuLinkText {
-        padding: 0 60px 0 25px;
-        width: 56%;
+        padding: 0 50px 0 25px;
+        width: 62%;
     }
 
     .MenuLinkText h1 {
@@ -69,13 +69,13 @@
     }
 
     .MenuLinkIcon {
-        border-radius: 28px;
-        height: 100px;
-        width: 100px;
+        border-radius: 16px;
+        height: 65px;
+        width: 65px;
     }
 
     .MenuLinkIcon i {
-        height: 50px;
+        height: 30px;
     }
 }
 
@@ -95,21 +95,21 @@
         line-height: 13px;
     }
 
-    .MenuLink { 
-        margin: 0 -12px
+    .MenuLink {
+        margin: 0 -12px;
     }
 }
 
 @media screen and (min-width: 992px) {
     .MenuLink img {
         object-fit: cover;
-        height: 120px;
-        width: 210px;
+        height: 90px;
+        width: 170px;
     }
 
     .MenuLinkText p {
         display: flex;
-        gap: 45px;
+        gap: 30px;
     }
 
     .MenuLinkText p strong,

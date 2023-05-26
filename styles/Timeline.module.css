@@ -11,7 +11,7 @@
 .TimelineFeedItem {
     align-items: baseline;
     display: flex;
-    padding: 20px 0;
+    padding: 15px 0;
     position: relative;
 }
 
@@ -63,10 +63,6 @@
 @media screen and (min-width: 768px) {
     .TimelineItemDate i {
         margin-right: 8px;
-    }
-
-    .TimelineFeedItem h5 {
-        margin-bottom: 16px;
     }
 
     .TimelineFeedItem > div + div {

@@ -15,7 +15,7 @@ function Investors() {
 
             { investorsItems.length > 0 ?
                 <div className={styles.MainMenu}>
-                    <div className="page-inner pb-0">
+                    <div className="page-inner pb-0 pt-10">
                         <BackButton />
                         <div className="page-heading">
                             <div className="page-icon">
@@ -30,7 +30,7 @@ function Investors() {
                                 <i className={item.icon} />
                             </span>
                             <span className={styles.MenuLinkText}>
-                                <h3>{item.title}</h3>
+                                <h4>{item.title}</h4>
                                 <p>
                                     <b>{item.subtitle}</b>
                                 </p>
@@ -45,7 +45,7 @@ function Investors() {
                             <i className="icon-existing-investors" />
                         </span>
                         <span className={styles.MenuLinkText}>
-                            <h3>Investors</h3>
+                            <h4>Investors</h4>
                             <p>
                                 <b>See our existing investors</b>
                             </p>

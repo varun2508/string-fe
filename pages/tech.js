@@ -14,7 +14,7 @@ function Tech() {
 
             { techItems.length > 0 ?
                 <div className={styles.MainMenu}>
-                    <div className="page-inner pb-0">
+                    <div className="page-inner pb-0 pt-10">
                         <BackButton />
                         <div className="page-heading">
                             <div className="page-icon">
@@ -29,7 +29,7 @@ function Tech() {
                                 <i className={item.icon} />
                             </span>
                             <span className={styles.MenuLinkText}>
-                                <h3>{item.title}</h3>
+                                <h4>{item.title}</h4>
                                 <p>
                                     <b>{item.subtitle}</b>
                                 </p>
